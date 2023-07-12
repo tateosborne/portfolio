@@ -8,6 +8,7 @@
     align-items: center;
     font-size: large;
     font-weight: bolder;
+    box-shadow: 0px 10px 15px -10px #000;
 
     .navItems {
         padding-right: 1em;
@@ -21,13 +22,9 @@
             color: black;
             text-decoration: none;
 
-            // &:visited {
-            //     color: black;
-            //     text-decoration: none;
-            // }
-
             &:hover {
                 color: #0c817b;
+                transition: color 0.25s linear;
             }
         }
     }

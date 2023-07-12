@@ -1,10 +1,10 @@
-import '../styles/about.scss'
+import '../styles/home.scss'
 
 function About() {
     return (
         <div className="heroContainer">
             <p>tate parmar osborne</p>
-           <img src="../hero.jpg" alt="hero image" />
+           <img className="heroImg" src="../hero.jpg" alt="hero image" />
         </div>
     )
 }
