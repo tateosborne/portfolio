@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Karla";
+    src: url("../fonts/Karla-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Karla-Italic";
+    src: url("../fonts/Karla-Italic.ttf") format("truetype");
+}
+
+html, body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    font-family: Karla;
+}

@@ -1,0 +1,9 @@
+.heroContainer {
+    width: 100%;
+    height: calc(100vh - 400px);
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F6F6F6;
+}
