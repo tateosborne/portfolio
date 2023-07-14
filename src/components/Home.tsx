@@ -4,12 +4,12 @@ function Home() {
 
     return (
         <>
-            <div className="home-container">
+            <div className="home-container" id="home">
                 <div className="hero-container">
                     <div className="hero-text">
                         <p className="name">tate parmar osborne 👋🏽</p>
                         <hr />
-                        <p className="phrase">full-stack developer with artistic flair</p>
+                        <p className="phrase">full-stack developer with artistic aptitudes</p>
                     </div>
                     <img className="hero-img" src="../hero.png" alt="hero image" />
                 </div>

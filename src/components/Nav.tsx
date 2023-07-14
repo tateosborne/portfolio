@@ -5,11 +5,11 @@ function Nav() {
         <div className="navBar">
             <p>tate parmar osborne • 👨🏽‍💻</p>
             <div className="navItems">
-                <a href="http://localhost:5173">Home</a>
-                <a href="http://localhost:5173">About</a>
-                <a href="http://localhost:5173">Projects</a>
-                <a href="http://localhost:5173">Artwork</a>
-                <a href="http://localhost:5173">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#artwork">Artwork</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     )
