@@ -1,19 +1,19 @@
-.aboutContainer {
+.home-container {
     width: 100%;
-    height: calc(100vh - 400px);
-
+    height: calc(100vh - 100px);
+    top: 100px;
     background-color: #F6F6F6;
 
-    .heroContainer {
+    .hero-container {
         width: 100%;
-        height: calc(100vh - 600px);
+        height: calc(100vh - 400px);
         box-sizing: border-box;
 
         display: flex;
         justify-content: space-evenly;
         align-items: center;
 
-        .heroText {
+        .hero-text {
             display: flex;
             flex-direction: column;
 
@@ -27,13 +27,13 @@
             }
 
             .name {
-                font-size: 40px;
+                font-size: 35px;
                 font-weight: 800;
             }
 
             .phrase {
                 padding: 1em;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 500;
                 text-align: center;
 
@@ -43,13 +43,15 @@
             }
         }
 
-        .heroImg {
+        .hero-img {
             width: 400px;
             height: auto;
             border-radius: 50%;
 
-            // box-shadow: 0px 0px 20px rgba(#000, 0.25);
-            animation: float 6s ease-in-out infinite;
+            box-shadow: 0px 0px 25px rgba(#888, 0.25);
+            // animation: float 6s ease-in-out infinite;
+            // border: thick solid #888;
+            // animation: pulse 6s infinite both;
         }
         
     }
@@ -62,13 +64,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 4em;
+        gap: 3em;
         background-color: #fff;
-        // border: solid thick #fff;
-        font-size: 20px;
-        font-weight: 500;
+        // border: solid thick rgba(#0c817b, 0.5);
+        font-size: 14px;
+        font-weight: 600;
         border-radius: 40px;
-        // box-shadow: 0px 0px 20px rgba(#000, 0.25);
+        box-shadow: 0px 0px 20px rgba(#888, 0.25);
 
         .icons {
             display: flex;
@@ -84,7 +86,7 @@
                 border-radius: 50%;
 
                 &:hover {
-                    box-shadow: 0px 0px 15px rgba(#000, 0.25);
+                    box-shadow: 0px 0px 15px rgba(#888, 0.25);
                 }
             }
         }
@@ -93,15 +95,15 @@
 
 @keyframes float {
 	0% {
-		box-shadow: 0 5px 50px 0px rgba(0,0,0,0.6);
+		box-shadow: 0 5px 25px 0px rgba(#888 ,0.6);
 		transform: translatey(0px);
 	}
 	50% {
-		box-shadow: 0 25px 50px 0px rgba(0,0,0,0.2);
+		box-shadow: 0 25px 25px 0px rgba(#888, 0.2);
 		transform: translatey(-20px);
 	}
 	100% {
-		box-shadow: 0 5px 50px 0px rgba(0,0,0,0.6);
+		box-shadow: 0 5px 25px 0px rgba(#888, 0.6);
 		transform: translatey(0px);
 	}
 }
