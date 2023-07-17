@@ -93,6 +93,28 @@
     }
 }
 
+.next-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+    button {
+        background-color: $white;
+        border: none;
+        padding: 1em;
+
+        &:hover {
+            border-radius: 50%;
+            color: $white;
+            background-color: $accent-colour;
+        }
+        img {
+            width: 4em;
+            height: auto;
+        }
+    }
+}
+
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 25px 0px rgba($light-grey, 0.6);

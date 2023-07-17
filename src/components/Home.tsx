@@ -39,13 +39,17 @@ function Home() {
                             <img src="icons/sql.svg" alt="sql" />
                         </a>
                         <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
-                            <img src="icons/c.svg" alt="c (language)" />
+                            <img src="icons/c-lang.svg" alt="c (language)" />
                         </a>
                         <a href="https://swift.org" target="_blank">
                             <img src="icons/swift.svg" alt="swift" />
                         </a>
                     </div>
                 </div>
+            </div>
+            <div className="next-page">
+                <button>
+                </button>
             </div>
         </>
     )

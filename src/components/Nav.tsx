@@ -2,9 +2,9 @@ import '../styles/nav.scss'
 
 function Nav() {
     return (
-        <div className="navBar">
+        <div className="nav-bar">
             <p>tate parmar osborne • 👨🏽‍💻</p>
-            <div className="navItems">
+            <div className="nav-items">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
