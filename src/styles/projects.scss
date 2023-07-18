@@ -1,0 +1,11 @@
+@import "vars.scss";
+
+
+.projectsContainer {
+    height: calc(100vh - 500px);
+    padding-top: 64px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: $off-white;
+}

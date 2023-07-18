@@ -40,7 +40,8 @@ h3 {
 button {
     padding: 0.5em;
     border-radius: 50%;
-
+    
+    cursor: pointer;
     background-color: #fff;
     border: none;
 }
