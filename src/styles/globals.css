@@ -12,6 +12,35 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
+    line-height: 150%;
 
     font-family: Karla;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 800;
+
+    color: #0c817b;
+}
+
+h3 {
+    width: fit-content;
+    padding: 0.25em;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+
+    background-color: #3F3F3F;
+    color: #fff;
+
+}
+
+button {
+    padding: 0.5em;
+    border-radius: 50%;
+
+    background-color: #fff;
+    border: none;
 }

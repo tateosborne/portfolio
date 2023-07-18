@@ -1,4 +1,5 @@
 import '../styles/home.scss'
+import svgs from '../svgs'
 
 function Home() {
 
@@ -17,39 +18,35 @@ function Home() {
                     <p>skills stack</p>
                     <p>|</p>
                     <div className="icons">  
-                        <a href="https://python.org" target="_blank">
-                            <img src="icons/python.svg" alt="python" />
+                        <a href="https://python.org" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.python}}>
                         </a>
-                        <a href="https://git-scm.com" target="_blank">
-                            <img src="icons/git.svg" alt="git" />
+                        <a href="https://git-scm.com" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.git}}>
                         </a>
-                        <a href="https://react.dev" target="_blank">
-                            <img src="icons/react.svg" alt="react" />
+                        <a href="https://react.dev" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.react}}>
                         </a>
-                        <a href="https://html.spec.whatwg.org" target="_blank">
-                            <img src="icons/html.svg" alt="html5" />
+                        <a href="https://html.spec.whatwg.org" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.html}}>
                         </a>
-                        <a href="https://sass-lang.coms" target="_blank">
-                            <img src="icons/sass.svg" alt="sass" />
+                        <a href="https://sass-lang.coms" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.sass}}>
                         </a>
-                        <a href="https://figma.com" target="_blank">
-                            <img src="icons/figma.svg" alt="figma" />
+                        <a href="https://figma.com" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.figma}}>
                         </a>
-                        <a href="https://mysql.com" target="_blank">
-                            <img src="icons/sql.svg" alt="sql" />
+                        <a href="https://mysql.com" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.sql}}>
                         </a>
-                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
-                            <img src="icons/c-lang.svg" alt="c (language)" />
+                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.cLang}}>
                         </a>
-                        <a href="https://swift.org" target="_blank">
-                            <img src="icons/swift.svg" alt="swift" />
+                        <a href="https://swift.org" target="_blank"
+                            dangerouslySetInnerHTML={{__html: svgs.swift}}>
                         </a>
                     </div>
                 </div>
-            </div>
-            <div className="next-page">
-                <button>
-                </button>
             </div>
         </>
     )

@@ -1,4 +1,5 @@
 import '../styles/nav.scss'
+import svgs from '../svgs'
 
 function Nav() {
     return (
@@ -10,6 +11,9 @@ function Nav() {
                 <a href="#projects">Projects</a>
                 <a href="#artwork">Artwork</a>
                 <a href="#contact">Contact</a>
+                <button
+                    dangerouslySetInnerHTML={{__html: svgs.moon}}>
+                </button>
             </div>
         </div>
     )
