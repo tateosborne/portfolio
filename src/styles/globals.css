@@ -41,6 +41,17 @@ h3 {
     color: #fff;
 }
 
+h4 {
+    width: fit-content;
+    padding: 0.25em;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+
+    background-color: #3F3F3F;
+    color: #fff;
+}
+
 p {
     font-size: 20px;
 }

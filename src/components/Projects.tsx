@@ -7,21 +7,33 @@ function Projects() {
         <div className="projects-container" id="projects">
             <div className="content-container">
                 <h2>PROJECTS 🛠️</h2>
-                <p>check out some projects I've made!</p>
+                <h3>check out some projects I've made!</h3>
                 <div className="project-list">
                     <div className="project">
-                        <img src="../../project-images/snake2.png" alt="uvmaps" />
-                        <h3>snake</h3>
+                        <img src="../../project-images/placeholder.png" alt="placeholder" />
+                        <h4>snake</h4>
+                        <p>description</p>
+                        <p>[`view` svg] [`github` svg]</p>
                     </div>
                     <div className="project">
-                        <img src="../../project-images/uvmaps.png" alt="uvmaps" />
-                        <h3>uvmap</h3>
+                        <div className="title">
+                            <img src="../../project-images/uvmaps.png" alt="placeholder" />
+                            <h4>uvmaps</h4>
+                        </div>
+                        <p>description</p>
+                        <p>[`view` svg] [`github` svg]</p>
                     </div>
                     <div className="project">
-                        <h3>twordle</h3>
+                        <img src="../../project-images/placeholder.png" alt="placeholder" />
+                        <h4>twordle</h4>
+                        <p>description</p>
+                        <p>[`view` svg] [`github` svg]</p>
                     </div>
                     <div className="project">
-                        <h3>twordle</h3>
+                        <img src="../../project-images/placeholder.png" alt="placeholder" />
+                        <h4>twordle</h4>
+                        <p>description</p>
+                        <p>[`view` svg] [`github` svg]</p>
                     </div>
                 </div>
 
