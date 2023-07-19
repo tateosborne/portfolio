@@ -1,7 +1,7 @@
 @import "vars.scss";
 
 .about-container {
-    width: 70%;
+    width: 55%;
     height: calc(100vh - 500px);
     margin: auto;
     display: flex;
@@ -9,7 +9,7 @@
 
     .content-container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         padding: 1em;
 
@@ -28,13 +28,11 @@
             width: 50%;
             margin-left: 1em;
 
-            font-size: 20px;
-
             span {
                 font-weight: 600;
                 
                 svg {
-                    width: 1.5em;
+                    width: 1em;
                     height: auto;
                 }
             }

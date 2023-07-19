@@ -8,13 +8,13 @@ function Home() {
             <div className="home-container" id="home">
                 <div className="hero-container">
                     <div className="hero-text">
-                        <p className="name">tate parmar osborne 👋🏽</p>
+                        <h1>tate parmar osborne 👋🏽</h1>
                         <hr />
                         <p className="phrase">full-stack developer with artistic aptitudes</p>
                     </div>
                     <img className="hero-img" src="../hero.png" alt="hero image" />
                 </div>
-                <div className="skillset">
+                <div className="skills">
                     <p>skills stack</p>
                     <p>|</p>
                     <div className="icons">  
