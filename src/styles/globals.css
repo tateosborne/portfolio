@@ -6,6 +6,11 @@
     font-family: "Karla-Italic";
     src: url("../fonts/Karla-Italic.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Fira-Code";
+    src: url("../fonts/Fira-Code.ttf") format("truetype");
+}
+
 
 html, body {
     margin: 0;
@@ -48,6 +53,7 @@ h4 {
     font-weight: 700;
     border-radius: 10px;
 
+    font-family: Fira-Code;
     background-color: #3F3F3F;
     color: #fff;
 }

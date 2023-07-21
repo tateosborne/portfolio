@@ -1,0 +1,35 @@
+@import "vars.scss";
+
+.container {
+    width: 4em;
+    height: 4em;
+    bottom: 3em;
+    right: 3em;
+    display: none;
+    position: fixed;
+    z-index: 99;
+
+    border-radius: 50%;
+    background-color: rgba($white, 0.75);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 25px rgba($light-grey, 0.5);
+
+    &.visible {
+        display: block;
+    }
+    
+    svg {
+        width: 3em;
+        height: 3em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: $black;
+    }
+
+    &:hover {
+        transform: scale(105%);
+        animation: all 0.2s;
+    }
+}
