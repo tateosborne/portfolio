@@ -22,6 +22,9 @@ function Projects() {
                             <a href=""
                                 dangerouslySetInnerHTML={{__html: svgs.github}}>
                             </a>
+                            <a href="" target="_blank"
+                                dangerouslySetInnerHTML={{__html: svgs.link}}>
+                            </a>
                         </div>
                     </div>
                     <div className="project">
@@ -44,10 +47,10 @@ function Projects() {
                     </div>
                     <div className="project">
                         <div className="title">
-                            <img src="../../project-images/placeholder.png" alt="placeholder" />
-                            <h4 style={{backgroundColor: "#000"}}>twordle</h4>
+                            <img src="../../project-images/twordle.png" alt="placeholder" />
+                            <h4 style={{backgroundColor: "#FF8F28"}}>twordle</h4>
                         </div>
-                        <p>description</p>
+                        <p>Built using Flutter, Twordle is my inspired creation after enjoying Wordle mornings. This individual project prioritizes seamless, enjoyable user experiences.</p>
                         <div className="view-more">
                             <a href=""
                                 dangerouslySetInnerHTML={{__html: svgs.view}}>
@@ -63,9 +66,9 @@ function Projects() {
                     <div className="project">
                         <div className="title">
                             <img src="../../project-images/placeholder.png" alt="placeholder" />
-                            <h4>twordle</h4>
+                            <h4>other</h4>
                         </div>
-                        <p>description</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec condimentum magna. Sed ut mollis est. Aliquam dolor eros, molestie a ultricies rutrum, placerat eget quam. Nunc purus leo, dignissim et euismod.</p>
                         <div className="view-more">
                             <a href=""
                                 dangerouslySetInnerHTML={{__html: svgs.view}}>
