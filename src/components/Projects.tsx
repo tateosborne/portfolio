@@ -6,8 +6,10 @@ function Projects() {
     return (
         <div className="projects-container" id="projects">
             <div className="content-container">
-                <h2>PROJECTS 🛠️</h2>
-                <h3>check out some projects I've made!</h3>
+                <div className="header-container">
+                    <h2>PROJECTS 🛠️</h2>
+                    <h3>check out some projects I've made!</h3>
+                </div>
                 <div className="project-list">
                     <div className="project">
                         <div className="title">

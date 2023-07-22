@@ -37,6 +37,7 @@ h2 {
 
 h3 {
     width: fit-content;
+    display: inline-block;
     padding: 0.25em;
     font-size: 18px;
     font-weight: 700;
