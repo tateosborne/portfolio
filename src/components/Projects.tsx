@@ -49,8 +49,8 @@ function Projects() {
                     </div>
                     <div className="project">
                         <div className="title">
-                            <img src="../../project-images/twordle.png" alt="placeholder" />
-                            <h4 style={{backgroundColor: "#FF8F28"}}>twordle</h4>
+                            <img src="../../project-images/twordle2.png" alt="placeholder" />
+                            <h4 style={{backgroundColor: "#C08C8C"}}>twordle</h4>
                         </div>
                         <p>Built using Flutter, Twordle is my inspired creation after enjoying Wordle mornings. This individual project prioritizes seamless, enjoyable user experiences.</p>
                         <div className="view-more">
