@@ -17,5 +17,30 @@
         h2 {
             color: $white;
         }
+
+        .email-container {
+            width: fit-content;
+            padding-left: 1em;
+            padding-right: 1em;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            background-color: $off-white;
+            border-radius: 20px;
+
+            svg {
+                width: 3em;
+                height: auto;
+                padding: 0.5em;
+                border-radius: 10px;
+
+                stroke: $off-white;
+                background-color: $off-black;
+            }
+            p {
+
+            }
+        }
     }
 }
