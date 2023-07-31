@@ -68,7 +68,7 @@ function Projects() {
                     <div className="project">
                         <div className="title">
                             <img src="../../project-images/placeholder.png" alt="placeholder" />
-                            <h4>other</h4>
+                            <h4>coming soon!</h4>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec condimentum magna. Sed ut mollis est. Aliquam dolor eros, molestie a ultricies rutrum, placerat eget quam. Nunc purus leo, dignissim et euismod.</p>
                         <div className="view-more">
