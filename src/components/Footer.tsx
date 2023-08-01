@@ -10,8 +10,18 @@ function Contact() {
                     <h2>REACH OUT 📬</h2>
                     <h3>check out my contacts below!</h3>
                 </div>
-                <p>tateposborne@icloud.com</p>
-                <p>résumé</p>
+                <div className="contacts">
+                    <div className="each-contact">
+                        <span 
+                            dangerouslySetInnerHTML={{__html: svgs.email}} />
+                        <p>tateposborne@icloud.com</p>
+                    </div>
+                    <div className="each-contact">
+                        <span
+                            dangerouslySetInnerHTML={{__html: svgs.download}} />
+                        <p>résumé</p>
+                    </div>
+                </div>
             </div>
             <img src="../emojis/memoji-call.png" alt="memoji phone call" />
         </div>

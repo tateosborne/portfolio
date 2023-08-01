@@ -21,9 +21,19 @@
             margin-right: 50%;
         }
 
-        svg {
-            width: 2em;
-            stroke: $black;
+        .contacts {
+            display: flex;
+            flex-direction: column;
+
+            .each-contact {
+                display: flex;
+
+                svg {
+                    width: 2em;
+                    stroke: $black;
+                }
+                
+            }
         }
     }
     
