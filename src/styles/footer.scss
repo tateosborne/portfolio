@@ -1,44 +1,28 @@
 @import "vars.scss";
 
 .footer-container {
-    height: fit-content;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: $off-white;
+    gap: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-    .contact-container {
-        width: 55%;
-        margin: auto;
-        padding: 1em;
+    background-color: $accent-colour;
 
-        .header-container {
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            margin-right: 50%;
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 2em;
+            height: auto;
         }
 
-        .contacts {
-            display: flex;
-            flex-direction: column;
-
-            .each-contact {
-                display: flex;
-
-                svg {
-                    width: 2em;
-                    stroke: $black;
-                }
-                
-            }
+        &:hover {
+            transform: scale(1.05);
         }
-    }
-    
-    img {
-        width: 10em;
-        height: auto;
     }
 }
