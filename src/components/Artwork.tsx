@@ -9,7 +9,7 @@ function Artwork() {
             <h3>check out some of my artwork!</h3>
             <div className="allessio">
                 <video controls poster="../thumbnail.png">
-                    {/* <source src="../artwork/allessio.mp4" type="video/mp4" /> */}
+                    <source src="../artwork/allessio.mp4" type="video/mp4" />
                 </video>
             </div>
         </div>
