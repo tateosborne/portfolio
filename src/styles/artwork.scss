@@ -3,16 +3,27 @@
 .artwork-container {
     width: 55%;
     margin: auto;
+
     background-color: $white;
 
-    .allessio {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        video {
-            width: 50%;
-            height: auto;
+    .header-container {
+        padding-left: 50%;
+    }
+
+    .content-container {
+        margin: auto;
+        padding: 1em;
+
+        .allessio {
+            
+            video {
+                width: 50%;
+                height: auto;
+            }
+
+            p {
+
+            }
         }
     }
 }
