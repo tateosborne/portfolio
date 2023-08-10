@@ -1,8 +1,18 @@
 @import "vars.scss";
 
 .artwork-container {
-    height: 200px;
     width: 55%;
     margin: auto;
     background-color: $white;
+
+    .allessio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        video {
+            width: 50%;
+            height: auto;
+        }
+    }
 }
