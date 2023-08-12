@@ -3,6 +3,8 @@
 .artwork-container {
     width: 55%;
     margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     background-color: $white;
 
@@ -11,18 +13,39 @@
     }
 
     .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
         margin: auto;
+        margin-top: 2em;
         padding: 1em;
 
-        .allessio {
-            
-            video {
+        .each-art {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            padding: 1em;
+            gap: 1em;
+
+            background: $off-white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba($light-grey, 0.25);
+
+            .artwork {
                 width: 50%;
-                height: auto;
+
+                video, img {
+                    width: 100%;
+                    height: auto;
+                }
             }
 
-            p {
-
+            .blurb {
+                width: 50%;
+                
+                h4 {
+                    background-color: #b49626;
+                }
             }
         }
     }
