@@ -49,6 +49,12 @@
                 }
 
                 .title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 1em;
+                    
                     img {
                         width: auto;
                         height: 250px;

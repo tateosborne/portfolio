@@ -5,14 +5,15 @@ function Footer() {
 
     return (
         <div className="footer-container">
-            {/* <span 
-                dangerouslySetInnerHTML={{__html: svgs.logo}} /> */}
+            <p>t.p.o.</p>
             <span 
                 dangerouslySetInnerHTML={{__html: svgs.linkedin}} />
             <span 
                 dangerouslySetInnerHTML={{__html: svgs.github}} />
             <span 
                 dangerouslySetInnerHTML={{__html: svgs.stackoverflow}} />
+            <span
+                dangerouslySetInnerHTML={{__html: svgs.youtube}}/>
         </div>
     )
 }
