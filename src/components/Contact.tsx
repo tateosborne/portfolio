@@ -4,7 +4,7 @@ import svgs from '../svgs'
 function Contact() {
 
     return (
-        <div className="contact-container">
+        <div className="contact-container" id="contact">
             <div className="sub-container">
                 <div className="header-container">
                     <h2>REACH OUT 📬</h2>
@@ -14,12 +14,12 @@ function Contact() {
                     <div className="each-contact">
                         <span 
                             dangerouslySetInnerHTML={{__html: svgs.email}} />
-                        <p>tateposborne@icloud.com</p>
+                        <a>tateposborne@icloud.com</a>
                     </div>
                     <div className="each-contact">
                         <span
                             dangerouslySetInnerHTML={{__html: svgs.download}} />
-                        <p>résumé (.pdf)</p>
+                        <a href="src/assets/pdfs/resume.pdf" target="_blank">résumé (.pdf)</a>
                     </div>
                 </div>
                 <img src="../emojis/memoji-call.png" alt="memoji phone call" />

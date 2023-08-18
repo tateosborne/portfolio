@@ -10,15 +10,26 @@
     padding-bottom: 20px;
 
     background-color: $accent-colour;
+    
+    a {
+        padding: 0.25em;
+        color: $white;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 
     span {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0.25em;
 
         svg {
-            width: 2em;
+            width: 32px;
             height: auto;
+            fill: $white;
         }
 
         &:hover {
