@@ -14,7 +14,9 @@ function Contact() {
                     <div className="each-contact">
                         <span 
                             dangerouslySetInnerHTML={{__html: svgs.email}} />
-                        <a>tateposborne@icloud.com</a>
+                        <a href="mailto:tateposborne@icloud.com" target="_blank" rel="noreferrer noopener">
+                            tateposborne@icloud.com
+                        </a>
                     </div>
                     <div className="each-contact">
                         <span
