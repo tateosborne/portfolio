@@ -1,16 +1,16 @@
 @import "vars.scss";
 
 .container {
-    width: 4em;
-    height: 4em;
-    bottom: 3em;
-    right: 3em;
+    width: 3em;
+    height: 3em;
+    bottom: 2em;
+    right: 2em;
     display: none;
     position: fixed;
     z-index: 99;
 
     border-radius: 50%;
-    background-color: rgba($white, 0.75);
+    background-color: rgba($primary, 0.75);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 25px rgba($light-grey, 0.5);
@@ -20,8 +20,8 @@
     }
     
     svg {
-        width: 3em;
-        height: 3em;
+        width: 2em;
+        height: 2em;
         position: absolute;
         top: 50%;
         left: 50%;

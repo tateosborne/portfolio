@@ -7,7 +7,7 @@
     padding-bottom: 80px;
     display: flex;
     align-items: center;
-    background-color: $off-white;
+    background-color: $secondary;
 
     .content-container {
         width: 55%;
@@ -36,7 +36,7 @@
                 height: 600px;
                 padding: 1em;
                 margin: auto;
-                background-color: $white;
+                background-color: $primary;
                 display: flex;
                 flex-direction: column;
 
@@ -84,7 +84,7 @@
                             fill: $black;
 
                             &:hover {
-                                fill: $accent-colour;
+                                fill: $accent;
                             }
                         }
                     }

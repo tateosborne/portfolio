@@ -9,11 +9,11 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    background-color: $accent-colour;
+    background-color: $accent;
     
     a {
         padding: 0.25em;
-        color: $white;
+        color: $primary;
 
         &:hover {
             transform: scale(1.05);
@@ -29,7 +29,7 @@
         svg {
             width: 32px;
             height: auto;
-            fill: $white;
+            fill: $primary;
         }
 
         &:hover {
