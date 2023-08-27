@@ -1,98 +1,100 @@
 @import "vars.scss";
 
-
-.projects-container {
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    display: flex;
-    align-items: center;
-    background-color: $secondary;
-
-    .content-container {
-        width: 55%;
+@include themify($themes) {
+    .projects-container {
         margin: auto;
-        padding: 1em;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        align-items: center;
+        background-color: themed("secondary");
 
-        .header-container {
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            margin-right: 50%;
-        }
+        .content-container {
+            width: 55%;
+            margin: auto;
+            padding: 1em;
 
-        .project-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-            margin-top: 2em;
-
-            .project {
+            .header-container {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                position: relative;
-                width: 45%;
-                height: 600px;
-                padding: 1em;
-                margin: auto;
-                background-color: $primary;
+                align-items: end;
+                margin-right: 50%;
+            }
+
+            .project-list {
                 display: flex;
-                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 2em;
+                margin-top: 2em;
 
-                border-radius: 20px;
-                box-shadow: 0px 0px 20px rgba($light-grey, 0.25);
-
-                p {
-                    margin-left: 1.5em;
-                    margin-right: 1.5em;
-                }
-
-                .title {
+                .project {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
                     align-items: center;
-                    margin-bottom: 1em;
-                    
-                    img {
-                        width: auto;
-                        height: 250px;
-                        display: block;
-                        margin: auto;
-                        border-radius: 5%;
+                    position: relative;
+                    width: 45%;
+                    height: 600px;
+                    padding: 1em;
+                    margin: auto;
+                    background-color: themed("primary");
+                    display: flex;
+                    flex-direction: column;
 
-                        box-shadow: 0px 0px 20px rgba($light-grey, 0.25);
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 20px rgba(themed("light-grey"), 0.25);
+
+                    p {
+                        margin-left: 1.5em;
+                        margin-right: 1.5em;
                     }
-                    
-                    h4 {
-                        margin: auto;
-                        margin-top: 1.5em;
 
+                    .title {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 1em;
+                        
+                        img {
+                            width: auto;
+                            height: 250px;
+                            display: block;
+                            margin: auto;
+                            margin-top: 0.5em;
+                            border-radius: 5%;
+
+                            box-shadow: 0px 0px 20px rgba(themed("light-grey"), 0.25);
+                        }
+                        
+                        h4 {
+                            margin: auto;
+                            margin-top: 1.5em;
+
+                        }
                     }
-                }
 
-                .view-more {
-                    position: absolute;
-                    bottom: 1em;
+                    .view-more {
+                        position: absolute;
+                        bottom: 1em;
 
-                    a {
-                        svg {
-                            width: 1.5em;
-                            height: auto;
-                            margin: 0.5em;
-                            fill: $black;
+                        a {
+                            svg {
+                                width: 1.5em;
+                                height: auto;
+                                margin: 0.5em;
+                                fill: themed("text");
 
-                            &:hover {
-                                fill: $accent;
+                                &:hover {
+                                    fill: themed("accent");
+                                }
                             }
                         }
                     }
-                }
 
-                &:hover {
-                    transform: scale(101%);
-                    transition: all 0.2s ease-in-out;
+                    &:hover {
+                        transform: scale(101%);
+                        transition: all 0.2s ease-in-out;
+                    }
                 }
             }
         }

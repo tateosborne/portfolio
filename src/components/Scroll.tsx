@@ -21,9 +21,11 @@ function Scroll() {
     }, []);
 
     return (
-        <a className={`container ${isVisible ? "visible" : ""}`} href="#"
-            dangerouslySetInnerHTML={{__html: svgs.uparrow}}>
-        </a>
+        <div className="light-theme">
+            <a className={`container ${isVisible ? "visible" : ""}`} href="#"
+                dangerouslySetInnerHTML={{__html: svgs.uparrow}}>
+            </a>
+        </div>
     )
 }
 

@@ -1,39 +1,41 @@
 @import "vars.scss";
 
-.footer-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    background-color: $accent;
-    
-    a {
-        padding: 0.25em;
-        color: $primary;
-
-        &:hover {
-            transform: scale(1.05);
-        }
-    }
-
-    span {
+@include themify($themes) {
+    .footer-container {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.25em;
+        gap: 2em;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
-        svg {
-            width: 32px;
-            height: auto;
-            fill: $primary;
+        background-color: themed("accent");
+        
+        a {
+            padding: 0.25em;
+            color: themed("primary");
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
 
-        &:hover {
-            transform: scale(1.05);
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.25em;
+
+            svg {
+                width: 32px;
+                height: auto;
+                fill: themed("primary");
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 }

@@ -4,7 +4,7 @@ import svgs from '../svgs'
 function Home() {
 
     return (
-        <>
+        <div className="light-theme">
             <div className="home-container" id="home">
                 <div className="hero-container">
                     <div className="hero-text">
@@ -48,7 +48,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

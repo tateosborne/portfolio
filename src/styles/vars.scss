@@ -1,16 +1,14 @@
 // colours
-$primary: #ffffff;
-$grey-0: #F8F9FA;
-$grey-1: #F1F3F5;
-$grey-2: #E9ECEF;
-$grey-3: #DEE2E6;
-$grey-4: #CED4DA;
-$grey-5: #ADB5BD;
-$grey-6: #868E96;
-$grey-7: #495057;
-$grey-8: #343A40;
-$grey-9: #212529;
-$black: #000000;
+$mono-0: #FFFFFF;
+$mono-1: #F6F6F6;
+$mono-2: #DEE2E6;
+$mono-3: #CED4DA;
+$mono-4: #ADB5BD;
+$mono-5: #868E96;
+$mono-6: #495057;
+$mono-7: #3F3F3F;
+$mono-8: #090909;
+$mono-9: #000000;
 
 $red-4: #FF8787;
 $red-5: #FF6B6B;
@@ -66,11 +64,48 @@ $orange-6: #FD7E14;
 $orange-7: #F76707;
 $orange-8: #E8590C;
 
-// globals
-$primary: $primary;
-$secondary: $grey-1;
-$accent: $violet-6;
-$off-black: #090909;
-$dark-grey: #3F3F3F;
-$grey: #ccc;
-$light-grey: #888;
+// light/dark mode declarations
+$themes: (
+    light: (
+        primary: $mono-0,
+        secondary: $mono-1,
+        accent: $yellow-7,
+        off-black: $mono-9,
+        dark-grey: $mono-7,
+        grey: $mono-5,
+        light-grey: $mono-3,
+        text: $mono-9
+    ),
+    dark: (
+        primary: $mono-8,
+        secondary: $mono-9,
+        accent: $yellow-7,
+        off-black: $mono-9,
+        dark-grey: $mono-7,
+        grey: $mono-5,
+        light-grey: $mono-3,
+        text: $mono-0
+    ),
+);
+
+@mixin themify($themes) {
+    @each $name, $values in $themes {
+        .#{$name}-theme {
+            $theme-map: $values !global;
+            @content;
+        }
+    }
+}
+
+// function to gather correct colour styling
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
+
+// $primary: $white;
+// $secondary: $mono-0;
+// $accent: $yellow-7;
+// $off-black: $mono-9;
+// $dark-grey: $mono-7;
+// $grey: $mono-5;
+// $light-grey: $mono-3;
