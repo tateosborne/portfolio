@@ -1,18 +1,19 @@
 // colours
-$mono-0: #FFFFFF;
-$mono-1: #f2f2f7;
-$mono-2: #e5e5ea;
-$mono-3: #d1d1d6;
-$mono-4: #c7c7cc;
-$mono-5: #aeaeb2;
+$white: #FFFFFF;
+$mono-0: #f2f2f7;
+$mono-1: #e5e5ea;
+$mono-2: #d1d1d6;
+$mono-3: #c7c7cc;
+$mono-4: #aeaeb2;
+$mono-5: #8e8e93;
 $mono-6: #8e8e93;
-$mono-7: #8e8e93;
-$mono-8: #636366;
-$mono-9: #48484a;
-$mono-10: #3a3a3c;
-$mono-11: #2c2c2e;
-$mono-12: #1c1c1e;
-$mono-13: #000000;
+$mono-7: #636366;
+$mono-8: #48484a;
+$mono-9: #3a3a3c;
+$mono-10: #2c2c2e;
+$mono-11: #151515;
+$mono-12: #121212;
+$black: #000000;
 
 $red-4: #FF8787;
 $red-5: #FF6B6B;
@@ -71,24 +72,26 @@ $orange-8: #E8590C;
 // light/dark mode declarations
 $themes: (
     light: (
-        primary: $mono-0,
-        secondary: $mono-1,
-        accent: $violet-4,
+        primary: $white,
+        secondary: $mono-0,
+        accent: $blue-8,
+        shadow: $black,
         off-black: $mono-12,
         dark-grey: $mono-10,
         grey: $mono-7,
         light-grey: $mono-4,
-        text: $mono-13
+        text: $mono-12
     ),
     dark: (
-        primary: $mono-13,
-        secondary: $mono-12,
-        accent: $violet-4,
+        primary: $mono-12,
+        secondary: $mono-11,
+        accent: $blue-4,
+        shadow: $white,
         off-black: $mono-12,
         dark-grey: $mono-10,
         grey: $mono-7,
         light-grey: $mono-4,
-        text: $mono-0
+        text: $white
     ),
 );
 

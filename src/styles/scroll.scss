@@ -14,7 +14,7 @@
         background-color: rgba(themed("primary"), 0.75);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        box-shadow: 0px 0px 25px rgba(themed("secondary"), 0.5);
+        box-shadow: 0px 0px 25px rgba(themed("shadow"), 0.5);
 
         &.visible {
             display: block;
