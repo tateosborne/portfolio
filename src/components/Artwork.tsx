@@ -1,10 +1,14 @@
 import '../styles/artwork.scss'
 import svgs from '../svgs'
 
-function Artwork() {
+type Props = {
+    theme: string;
+}
+
+const Artwork: React.FC<Props> = ({theme}) => {
 
     return (
-        <div className="light-theme">
+        <div className={theme}>
             <div className="artwork-container" id="artwork">
                 <div className="header-container">
                     <h2>ARTWORK 🎨</h2>

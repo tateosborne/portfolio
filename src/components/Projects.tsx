@@ -1,10 +1,14 @@
 import '../styles/projects.scss'
 import svgs from '../svgs'
 
-function Projects() {
+type Props = {
+    theme: string;
+}
+
+const Projects: React.FC<Props> = ({theme}) => {
 
     return (
-        <div className="light-theme">
+        <div className={theme}>
             <div className="projects-container" id="projects">
                 <div className="content-container">
                     <div className="header-container">

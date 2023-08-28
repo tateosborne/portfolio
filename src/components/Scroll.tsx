@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 import "../styles/scroll.scss";
 import svgs from "../svgs";
 
-function Scroll() {
+type Props = {
+    theme: string;
+}
+
+const Scroll: React.FC<Props> = ({theme}) => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -21,7 +25,7 @@ function Scroll() {
     }, []);
 
     return (
-        <div className="light-theme">
+        <div className={theme}>
             <a className={`container ${isVisible ? "visible" : ""}`} href="#"
                 dangerouslySetInnerHTML={{__html: svgs.uparrow}}>
             </a>

@@ -1,10 +1,14 @@
 import '../styles/footer.scss'
 import svgs from '../svgs'
 
-function Footer() {
+type Props = {
+    theme: string;
+}
+
+const Footer: React.FC<Props> = ({theme}) => {
 
     return (
-        <div className="light-theme">
+        <div className={theme}>
             <div className="footer-container">
                 <a href="https://tateosborne.com">
                     t.p.o.    

@@ -1,10 +1,14 @@
 import '../styles/contact.scss'
 import svgs from '../svgs'
 
-function Contact() {
+type Props = {
+    theme: string;
+}
+
+const Contact: React.FC<Props> = ({theme}) => {
 
     return (
-        <div className="light-theme">
+        <div className={theme}>
             <div className="contact-container" id="contact">
                 <div className="sub-container">
                     <div className="header-container">

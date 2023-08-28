@@ -1,10 +1,14 @@
 import '../styles/about.scss'
 import svgs from '../svgs'
 
-function About() {
+type Props = {
+    theme: string;
+}
+
+const About: React.FC<Props> = ({theme}) => {
 
     return (
-        <div className="light-theme">
+        <div className={theme}>
             <div className="about-container" id="about">
                 <div className="content-container">
                     <img src="../../emojis/memoji-coding.png" alt="coding cartoon" />
