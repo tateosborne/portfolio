@@ -1,14 +1,18 @@
 // colours
 $mono-0: #FFFFFF;
-$mono-1: #F6F6F6;
-$mono-2: #DEE2E6;
-$mono-3: #CED4DA;
-$mono-4: #ADB5BD;
-$mono-5: #868E96;
-$mono-6: #495057;
-$mono-7: #3F3F3F;
-$mono-8: #090909;
-$mono-9: #000000;
+$mono-1: #f2f2f7;
+$mono-2: #e5e5ea;
+$mono-3: #d1d1d6;
+$mono-4: #c7c7cc;
+$mono-5: #aeaeb2;
+$mono-6: #8e8e93;
+$mono-7: #8e8e93;
+$mono-8: #636366;
+$mono-9: #48484a;
+$mono-10: #3a3a3c;
+$mono-11: #2c2c2e;
+$mono-12: #1c1c1e;
+$mono-13: #000000;
 
 $red-4: #FF8787;
 $red-5: #FF6B6B;
@@ -70,20 +74,20 @@ $themes: (
         primary: $mono-0,
         secondary: $mono-1,
         accent: $yellow-7,
-        off-black: $mono-9,
-        dark-grey: $mono-7,
-        grey: $mono-5,
-        light-grey: $mono-3,
-        text: $mono-9
+        off-black: $mono-12,
+        dark-grey: $mono-10,
+        grey: $mono-7,
+        light-grey: $mono-4,
+        text: $mono-13
     ),
     dark: (
-        primary: $mono-8,
-        secondary: $mono-9,
+        primary: $mono-12,
+        secondary: $mono-10,
         accent: $yellow-7,
-        off-black: $mono-9,
-        dark-grey: $mono-7,
-        grey: $mono-5,
-        light-grey: $mono-3,
+        off-black: $mono-12,
+        dark-grey: $mono-10,
+        grey: $mono-7,
+        light-grey: $mono-4,
         text: $mono-0
     ),
 );
@@ -101,11 +105,3 @@ $themes: (
 @function themed($key) {
     @return map-get($theme-map, $key);
 }
-
-// $primary: $white;
-// $secondary: $mono-0;
-// $accent: $yellow-7;
-// $off-black: $mono-9;
-// $dark-grey: $mono-7;
-// $grey: $mono-5;
-// $light-grey: $mono-3;

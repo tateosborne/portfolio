@@ -3,7 +3,6 @@ import '../styles/nav.scss'
 import svgs from '../svgs'
 
 function Nav() {
-
     const [theme, setTheme] = useState("light-theme");
 
     const toggleMode = () => {
