@@ -32,7 +32,7 @@
 
                 h3 {
                     color: themed("primary");
-                    background-color: themed("light-grey");
+                    background-color: themed("h3-bg-colour");
                 }
             }
 
@@ -83,7 +83,7 @@
 
                 background-color: themed("primary");
                 border-radius: 50%;
-                box-shadow: 0px 0px 25px rgba(themed("shadow"), 0.25);
+                box-shadow: 0px 0px 25px rgba(themed("shadow"), 0.15);
             }
         }
     }

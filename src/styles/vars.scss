@@ -75,23 +75,17 @@ $themes: (
         primary: $white,
         secondary: $mono-0,
         accent: $blue-8,
-        shadow: $black,
-        off-black: $mono-12,
-        dark-grey: $mono-10,
-        grey: $mono-7,
-        light-grey: $mono-4,
-        text: $mono-12
+        text: $mono-12,
+        h3-bg-colour: $mono-8,
+        shadow: $white
     ),
     dark: (
         primary: $mono-12,
         secondary: $mono-11,
         accent: $blue-4,
-        shadow: $white,
-        off-black: $mono-12,
-        dark-grey: $mono-10,
-        grey: $mono-7,
-        light-grey: $mono-4,
-        text: $white
+        text: $white,
+        h3-bg-colour: $mono-4,
+        shadow: $black
     ),
 );
 

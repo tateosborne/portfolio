@@ -24,13 +24,13 @@
                     color: themed("text");
                 }
 
-                hr {
-                    height: 1px;
-                    width: 50px;
-                    padding: 0;
-                    margin: auto;
-                    border: 0;
-                    border-top: 1px solid themed("text");
+                h1 {
+                    span {
+                        text-decoration: underline;
+                        text-decoration-color: themed("accent");
+                        text-decoration-thickness: 5px;
+                        text-underline-offset: 1em;
+                    }
                 }
 
                 .phrase {
