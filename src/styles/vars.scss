@@ -11,8 +11,8 @@ $mono-7: #636366;
 $mono-8: #48484a;
 $mono-9: #3a3a3c;
 $mono-10: #2c2c2e;
-$mono-11: #151515;
-$mono-12: #121212;
+$mono-11: #181818;
+$mono-12: #141414;
 $black: #000000;
 
 $red-4: #FF8787;
@@ -77,7 +77,7 @@ $themes: (
         accent: $blue-8,
         text: $mono-12,
         h3-bg-colour: $mono-8,
-        shadow: $white
+        shadow: $mono-6
     ),
     dark: (
         primary: $mono-12,

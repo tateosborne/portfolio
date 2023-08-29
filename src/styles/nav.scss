@@ -15,12 +15,15 @@
         font-size: 18px;
         font-weight: 700;
         background-color: rgba(themed("primary"), 0.85);
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
         box-shadow: 0px 10px 15px -10px rgba(themed("shadow"), 0.15);
 
         p {
-            color: themed("text");
+            color: themed("primary");
+            background-color: themed("accent");
+            padding: 0.25em;
+            border-radius: 10px;
         }
 
         .nav-items {
