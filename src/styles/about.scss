@@ -2,6 +2,7 @@
 
 @include themify($themes) {
     background: themed("primary");
+    transition: all 0.5s ease-in-out;
 
     .about-container {
         width: 55%;
@@ -9,6 +10,7 @@
         margin: auto;
         display: flex;
         align-items: center;
+        
 
         .content-container {
             display: flex;

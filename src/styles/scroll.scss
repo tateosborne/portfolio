@@ -1,6 +1,7 @@
 @import "vars.scss";
 
 @include themify($themes) {
+    
     .container {
         width: 3em;
         height: 3em;
@@ -15,6 +16,7 @@
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         box-shadow: 0px 0px 25px rgba(themed("shadow"), 0.5);
+        transition: all 0.2s ease-in-out;
 
         &.visible {
             display: block;
@@ -32,7 +34,6 @@
 
         &:hover {
             transform: scale(105%);
-            animation: all 0.2s;
         }
     }
 }

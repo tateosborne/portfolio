@@ -1,11 +1,14 @@
 @import "vars.scss";
 
 @include themify($themes) {
+    
     .home-container {
         width: 100%;
         height: calc(100vh - 32px);
         background-color: themed("secondary");
         padding-top: 50px;
+        
+        transition: all 0.5s ease-in-out;
 
         .hero-container {
             width: 100%;

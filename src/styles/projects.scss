@@ -1,6 +1,7 @@
 @import "vars.scss";
 
 @include themify($themes) {
+    
     .projects-container {
         margin: auto;
         padding-top: 80px;
@@ -8,6 +9,8 @@
         display: flex;
         align-items: center;
         background-color: themed("secondary");
+
+        transition: all 0.5s ease-in-out;
 
         .content-container {
             width: 55%;
@@ -50,7 +53,7 @@
                     flex-direction: column;
 
                     border-radius: 20px;
-                    box-shadow: 0px 0px 20px rgba(themed("shadow"), 0.15);
+                    transition: all 0.2s ease-in-out;
 
                     h4 {
                         color: themed("text");
@@ -105,7 +108,7 @@
 
                     &:hover {
                         transform: scale(101%);
-                        transition: all 0.2s ease-in-out;
+                        box-shadow: 0px 0px 20px rgba(themed("shadow"), 0.15);
                     }
                 }
             }

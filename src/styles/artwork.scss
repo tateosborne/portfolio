@@ -1,13 +1,15 @@
 @import "vars.scss";
 
 @include themify($themes) {
+    background-color: themed("primary");
+    transition: all 0.5s ease-in-out;
+    
     .artwork-container {
         width: 55%;
         margin: auto;
         padding-top: 80px;
         padding-bottom: 80px;
 
-        background-color: themed("primary");
 
         .header-container {
             padding-left: 50%;
@@ -42,7 +44,7 @@
 
                 background: themed("secondary");
                 border-radius: 20px;
-                box-shadow: 0px 0px 20px rgba(themed("shadow"), 0.15);
+                transition: all 0.2s ease-in-out;
 
                 .artwork {
                     display: flex;
@@ -67,7 +69,7 @@
                 
                 &:hover {
                     transform: scale(101%);
-                    transition: all 0.2s ease-in-out;
+                    box-shadow: 0px 0px 20px rgba(themed("shadow"), 0.15);
                 }
             }
         }
