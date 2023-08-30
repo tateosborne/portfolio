@@ -40,10 +40,10 @@
 
                 color: themed("text");
                 text-decoration: none;
+                transition: all 0.2s;
 
                 &:hover {
                     color: themed("accent");
-                    transition: all 0.2s;
                 }
             }
 

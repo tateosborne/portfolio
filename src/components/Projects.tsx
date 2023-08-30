@@ -39,7 +39,7 @@ const Projects: React.FC<Props> = ({theme}) => {
                                 <img src="../../project-images/uvmaps.png" alt="uvmaps" />
                                 <h4 style={{textDecorationColor: "rgb(31, 81, 42)"}}>uvmaps</h4>
                             </div>
-                            <p>In collaboration with four developers, we crafted an iOS app using SwiftUI. Our aim was to aid University of Vermont students in locating buildings and reaching classes punctually. </p>
+                            <p>In collaboration with four developers, we crafted an iOS app using SwiftUI. Our aim was to help University of Vermont students locate buildings and getting to classes on time. </p>
                             <div className="view-more">
                                 <a href=""
                                     dangerouslySetInnerHTML={{__html: svgs.view}}>

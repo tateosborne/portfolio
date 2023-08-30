@@ -18,7 +18,7 @@ const Artwork: React.FC<Props> = ({theme}) => {
                     <div className="art-tile">
                         <div className="blurb">
                             <h4 style={{textDecorationColor: "#962D23"}}>animation</h4>
-                            <p>I designed, painted, assembled, and edited an animated film showcasing a fictional chef's daily life. I worked on the piece extensively over the course of two months.</p>
+                            <p>I designed, painted, and edited an animated film showcasing a fictional chef's daily life. I worked on the piece extensively over the course of two months.</p>
                         </div>
                         <div className="artwork">
                             <video poster="../allessiothumbnail.png" controls>
@@ -38,7 +38,7 @@ const Artwork: React.FC<Props> = ({theme}) => {
                     <div className="art-tile">
                         <div className="blurb">
                             <h4>pottery</h4>
-                            <p>I honed wheel throwing for five months, crafting functional pottery. The art of creating delicate, lightweight pieces resonated with me, furthering my appreciation for this craft.</p>
+                            <p>I honed wheel throwing for five months, crafting functional pottery. The art of turning what was once mud into delicate, lightweight pieces resonated with me, furthering my appreciation for this craft.</p>
                         </div>
                         <div className="artwork">
                             <img src="../project-images/placeholder.png" alt="" />
@@ -56,7 +56,7 @@ const Artwork: React.FC<Props> = ({theme}) => {
                     <div className="art-tile">
                         <div className="blurb">
                             <h4 style={{textDecorationColor: "#65432D"}}>3-dimensional animation</h4>
-                            <p>After making some digital art in graphic design and manual animations, I wanted to blend the two. I learned the ropes of the powerful software <i>Blender</i>, and created this doughnut clip.</p>
+                            <p>After making some digital art in graphic design and hand-drawn animations, I wanted to combine the two. I learned the ropes of the powerful software <i>Blender</i>, and created this doughnut clip.</p>
                         </div>
                         <div className="artwork">
                             <video poster="../doughnutthumbnail.png" controls>

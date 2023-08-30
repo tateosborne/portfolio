@@ -18,7 +18,12 @@ html, body {
     line-height: 150%;
 
     font-family: Karla;
+    scrollbar-width: 0;
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
