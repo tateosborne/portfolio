@@ -56,6 +56,13 @@
                         max-width: 90%;
                         border-radius: 20px;
                     }
+                    button {
+                        background-color: themed("secondary");
+                        svg {
+                            height: 2em;
+                            width: 2em;
+                        }
+                    }
                 }
 
                 .blurb {

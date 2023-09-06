@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import '../styles/artwork.scss'
 import svgs from '../svgs'
 
@@ -5,7 +6,94 @@ type Props = {
     theme: string;
 }
 
+const pottery = [
+];
+
+const graphicDesign = [
+    {
+        alt: "giraffe",
+        path: "../artwork/graphic-design/giraffe.jpg",
+    },
+    {
+        alt: "ice age horror movie poster",
+        path: "../artwork/graphic-design/ice-age.jpg",
+    },
+    {
+        alt: "carrots",
+        path: "../artwork/graphic-design/carrots.jpg",
+    },
+    {
+        alt: "empathetic portrait",
+        path: "../artwork/graphic-design/ben.jpg",
+    },
+];
+
+const photography = [
+];
+
+const drawings = [
+    {
+        alt: "hand",
+        path: "../artwork/drawings/hand.jpg",
+    },
+    {
+        alt: "car",
+        path: "../artwork/drawings/car.jpg",
+    },
+    {
+        alt: "fruit",
+        path: "../artwork/drawings/fruit.jpg",
+    },
+    {
+        alt: "candle",
+        path: "../artwork/drawings/candle.jpg",
+    },
+    {
+        alt: "still life",
+        path: "../artwork/drawings/still-life.jpg",
+    },
+    {
+        alt: "portrait",
+        path: "../artwork/drawings/portrait.jpg",
+    },
+]
+
 const Artwork: React.FC<Props> = ({theme}) => {
+
+    const [graphicDesignIdx, setGraphicDesignIdx] = useState(0);
+    const [drawingIdx, setDrawingIdx] = useState(0);
+
+    const graphicDesignPrev = () => {
+        if (graphicDesignIdx > 0) {
+            setGraphicDesignIdx(graphicDesignIdx-1);
+        } else {
+            setGraphicDesignIdx(3);
+        }
+    }
+
+    const graphicDesignNext = () => {
+        if (graphicDesignIdx < 3) {
+            setGraphicDesignIdx(graphicDesignIdx+1);
+        } else {
+            setGraphicDesignIdx(0);
+        }
+    }
+
+    const drawingPrev = () => {
+        if (drawingIdx > 0) {
+            setDrawingIdx(drawingIdx-1);
+        } else {
+            setDrawingIdx(5);
+        }
+    }
+
+    const drawingNext = () => {
+        if (drawingIdx < 5) {
+            setDrawingIdx(drawingIdx+1);
+        } else {
+            setDrawingIdx(0);
+        }
+    }
 
     return (
         <div className={theme}>
@@ -22,13 +110,13 @@ const Artwork: React.FC<Props> = ({theme}) => {
                         </div>
                         <div className="artwork">
                             <video poster="../allessiothumbnail.png" controls>
-                                <source src="../artwork/allessio.mp4" type="video/mp4" />
+                                <source src="../artwork/animations/allessio.mp4" type="video/mp4" />
                             </video>
                         </div>
                     </div>
                     <div className="art-tile">
                         <div className="artwork">
-                            <img src="../artwork/oilpainting.jpg" alt="pebbles & piers oil painting" />
+                            <img src="../artwork/paintings/oil-painting.jpg" alt="pebbles & piers oil painting" />
                         </div>
                         <div className="blurb">
                             <h4 style={{textDecorationColor: "#5B6384"}}>oil painting</h4>
@@ -46,7 +134,13 @@ const Artwork: React.FC<Props> = ({theme}) => {
                     </div>
                     <div className="art-tile">
                         <div className="artwork">
-                            <img src="../artwork/giraffe.jpg" alt="giraffe graphic design" />
+                            <button onClick={graphicDesignPrev}
+                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                            </button>
+                            <img src={graphicDesign[graphicDesignIdx].path} alt={graphicDesign[graphicDesignIdx].alt} />
+                            <button onClick={graphicDesignNext}
+                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                            </button>
                         </div>
                         <div className="blurb">
                             <h4 style={{textDecorationColor: "#C5AE72"}}>graphic design</h4>
@@ -60,13 +154,19 @@ const Artwork: React.FC<Props> = ({theme}) => {
                         </div>
                         <div className="artwork">
                             <video poster="../doughnutthumbnail.png" controls>
-                                <source src="../artwork/doughnut.mp4" type="video/mp4" />
+                                <source src="../artwork/animations/doughnut.mp4" type="video/mp4" />
                             </video>
                         </div>
                     </div>
                     <div className="art-tile">
                         <div className="artwork">
-                            <img src="../project-images/placeholder.png" alt="" />
+                            <button onClick={drawingPrev}
+                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                            </button>
+                            <img src={drawings[drawingIdx].path} alt={drawings[drawingIdx].alt} />
+                            <button onClick={drawingNext}
+                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                            </button>
                         </div>
                         <div className="blurb">
                             <h4>drawings</h4>
