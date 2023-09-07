@@ -7,28 +7,18 @@ type Props = {
 }
 
 const pottery = [
-];
-
-const graphicDesign = [
     {
-        alt: "giraffe",
-        path: "../artwork/graphic-design/giraffe.jpg",
+        alt: "bud vase",
+        path: "../artwork/pottery/bud-vase.jpg",
     },
     {
-        alt: "ice age horror movie poster",
-        path: "../artwork/graphic-design/ice-age.jpg",
+        alt: "side plate",
+        path: "../artwork/pottery/side-plate.jpg",
     },
     {
-        alt: "carrots",
-        path: "../artwork/graphic-design/carrots.jpg",
-    },
-    {
-        alt: "empathetic portrait",
-        path: "../artwork/graphic-design/ben.jpg",
-    },
-];
-
-const photography = [
+        alt: "tall tea mug",
+        path: "../artwork/pottery/tall-mug.jpg",
+    }
 ];
 
 const drawings = [
@@ -55,27 +45,100 @@ const drawings = [
     {
         alt: "portrait",
         path: "../artwork/drawings/portrait.jpg",
+    }
+];
+
+const photography = [
+    {
+        alt: "Chicago waterfront",
+        path: "../artwork/photography/chicago-water.jpg",
     },
-]
+    {
+        alt: "newspaper closeup",
+        path: "../artwork/photography/newspaper.jpg",
+    },
+    {
+        alt: "Boone Hall",
+        path: "../artwork/photography/boone.jpg",
+    },
+    {
+        alt: "underground",
+        path: "../artwork/photography/underground.jpg",
+    },
+    {
+        alt: "the Chicago Bean",
+        path: "../artwork/photography/bean.jpg",
+    },
+    {
+        alt: "london archway",
+        path: "../artwork/photography/archway.jpg",
+    },
+    {
+        alt: "closeup of the Chicago Bean",
+        path: "../artwork/photography/bean-closeup.jpg",
+    },
+    {
+        alt: "cyclist in northern England",
+        path: "../artwork/photography/cyclist.jpg",
+    },
+    {
+        alt: "window cleaner in Chicago",
+        path: "../artwork/photography/window-cleaner.jpg",
+    },
+    {
+        alt: "funky wall with mirror tile",
+        path: "../artwork/photography/mirror.jpg",
+    },
+    {
+        alt: "walking on path",
+        path: "../artwork/photography/walking.jpg",
+    },
+    {
+        alt: "Boston Common",
+        path: "../artwork/photography/boston-common.jpg",
+    }
+];
+
+const graphicDesign = [
+    {
+        alt: "giraffe",
+        path: "../artwork/graphic-design/giraffe.jpg",
+    },
+    {
+        alt: "ice age horror movie poster",
+        path: "../artwork/graphic-design/ice-age.jpg",
+    },
+    {
+        alt: "carrots",
+        path: "../artwork/graphic-design/carrots.jpg",
+    },
+    {
+        alt: "empathetic portrait",
+        path: "../artwork/graphic-design/ben.jpg",
+    }
+];
+
 
 const Artwork: React.FC<Props> = ({theme}) => {
 
-    const [graphicDesignIdx, setGraphicDesignIdx] = useState(0);
+    const [potteryIdx, setPotteryIdx] = useState(0);
     const [drawingIdx, setDrawingIdx] = useState(0);
+    const [photographyIdx, setPhotographyIdx] = useState(0);
+    const [graphicDesignIdx, setGraphicDesignIdx] = useState(0);
 
-    const graphicDesignPrev = () => {
-        if (graphicDesignIdx > 0) {
-            setGraphicDesignIdx(graphicDesignIdx-1);
+    const potteryPrev = () => {
+        if (potteryIdx > 0) {
+            setPotteryIdx(potteryIdx-1);
         } else {
-            setGraphicDesignIdx(3);
+            setPotteryIdx(2);
         }
     }
 
-    const graphicDesignNext = () => {
-        if (graphicDesignIdx < 3) {
-            setGraphicDesignIdx(graphicDesignIdx+1);
+    const potteryNext = () => {
+        if (potteryIdx < 2) {
+            setPotteryIdx(potteryIdx+1);
         } else {
-            setGraphicDesignIdx(0);
+            setPotteryIdx(0);
         }
     }
 
@@ -95,6 +158,38 @@ const Artwork: React.FC<Props> = ({theme}) => {
         }
     }
 
+    const photographyPrev = () => {
+        if (photographyIdx > 0) {
+            setPhotographyIdx(photographyIdx-1);
+        } else {
+            setPhotographyIdx(11);
+        }
+    }
+
+    const photographyNext = () => {
+        if (photographyIdx < 11) {
+            setPhotographyIdx(photographyIdx+1);
+        } else {
+            setPhotographyIdx(0);
+        }
+    }
+
+    const graphicDesignPrev = () => {
+        if (graphicDesignIdx > 0) {
+            setGraphicDesignIdx(graphicDesignIdx-1);
+        } else {
+            setGraphicDesignIdx(3);
+        }
+    }
+
+    const graphicDesignNext = () => {
+        if (graphicDesignIdx < 3) {
+            setGraphicDesignIdx(graphicDesignIdx+1);
+        } else {
+            setGraphicDesignIdx(0);
+        }
+    }
+
     return (
         <div className={theme}>
             <div className="artwork-container" id="artwork">
@@ -106,7 +201,7 @@ const Artwork: React.FC<Props> = ({theme}) => {
                     <div className="art-tile">
                         <div className="blurb">
                             <h4 style={{textDecorationColor: "#962D23"}}>animation</h4>
-                            <p>I designed, painted, and edited an animated film showcasing a fictional chef's daily life. I worked on the piece extensively over the course of two months.</p>
+                            <p>I designed, painted, and edited an animated film showcasing a fictional chef's daily life. I worked on the piece extensively over the course of two months and produced my favourite piece.</p>
                         </div>
                         <div className="artwork">
                             <video poster="../allessiothumbnail.png" controls>
@@ -116,20 +211,62 @@ const Artwork: React.FC<Props> = ({theme}) => {
                     </div>
                     <div className="art-tile">
                         <div className="artwork">
-                            <img src="../artwork/paintings/oil-painting.jpg" alt="pebbles & piers oil painting" />
+                            <button onClick={potteryPrev}
+                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                            </button>
+                            <div className="slideshow">
+                                <img src={pottery[potteryIdx].path} alt={pottery[potteryIdx].alt} />
+                            </div>
+                            <button onClick={potteryNext}
+                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                            </button>
                         </div>
                         <div className="blurb">
-                            <h4 style={{textDecorationColor: "#5B6384"}}>oil painting</h4>
-                            <p>For a final project, I tried oil painting for the first time. It resulted in this 3ft by 3ft canvas, <i>Pebbles & Piers</i>, which is a portrayal of Brighton beach in my English hometown.</p>
+                            <h4 style={{textDecorationColor: "#B0A68A"}}>pottery</h4>
+                            <p>I honed wheel throwing for five months, crafting functional pottery. The art of turning what was once mud into delicate, lightweight pieces resonated with me, furthering my appreciation for this craft.</p>
                         </div>
                     </div>
                     <div className="art-tile">
                         <div className="blurb">
-                            <h4>pottery</h4>
-                            <p>I honed wheel throwing for five months, crafting functional pottery. The art of turning what was once mud into delicate, lightweight pieces resonated with me, furthering my appreciation for this craft.</p>
+                            <h4 style={{textDecorationColor: "#5B6384"}}>oil painting</h4>
+                            <p>For a final project, I tried oil painting for the first time. It resulted in this 3ft by 3ft canvas, <i>Pebbles & Piers</i>, which is a portrayal of Brighton beach in my English hometown.</p>
                         </div>
                         <div className="artwork">
-                            <img src="../project-images/placeholder.png" alt="" />
+                            <img src="../artwork/paintings/oil-painting.jpg" alt="pebbles & piers oil painting" />
+                        </div>
+                    </div>
+                    <div className="art-tile">
+                        <div className="artwork">
+                            <button onClick={drawingPrev}
+                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                            </button>
+                            <div className="slideshow">
+                                <img src={drawings[drawingIdx].path} alt={drawings[drawingIdx].alt} />
+                            </div>
+                            <button onClick={drawingNext}
+                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                            </button>
+                        </div>
+                        <div className="blurb">
+                            <h4>drawings</h4>
+                            <p>Ever since I was young, I've kept sketch books that I would draw in from time to time. It's always been my favourite medium because of its simplicity. To the left are various I've done over the years.</p>
+                        </div>
+                    </div>
+                    <div className="art-tile">
+                        <div className="blurb">
+                            <h4 style={{textDecorationColor: "#1E5A68"}}>photography</h4>
+                            <p>Photography is an art that I've indulged in sporadically over the years. I've always enjoyed the act of capturing moments in a certain light. Having recently got a camera as well, I feel inspired to explore this medium more.</p>
+                        </div>
+                        <div className="artwork">
+                            <button onClick={photographyPrev}
+                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                            </button>
+                            <div className="slideshow">
+                                <img src={photography[photographyIdx].path} alt={photography[photographyIdx].alt} />
+                            </div>
+                            <button onClick={photographyNext}
+                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                            </button>
                         </div>
                     </div>
                     <div className="art-tile">
@@ -137,7 +274,9 @@ const Artwork: React.FC<Props> = ({theme}) => {
                             <button onClick={graphicDesignPrev}
                                 dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
                             </button>
-                            <img src={graphicDesign[graphicDesignIdx].path} alt={graphicDesign[graphicDesignIdx].alt} />
+                            <div className="slideshow">
+                                <img src={graphicDesign[graphicDesignIdx].path} alt={graphicDesign[graphicDesignIdx].alt} />
+                            </div>
                             <button onClick={graphicDesignNext}
                                 dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
                             </button>
@@ -156,21 +295,6 @@ const Artwork: React.FC<Props> = ({theme}) => {
                             <video poster="../doughnutthumbnail.png" controls>
                                 <source src="../artwork/animations/doughnut.mp4" type="video/mp4" />
                             </video>
-                        </div>
-                    </div>
-                    <div className="art-tile">
-                        <div className="artwork">
-                            <button onClick={drawingPrev}
-                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
-                            </button>
-                            <img src={drawings[drawingIdx].path} alt={drawings[drawingIdx].alt} />
-                            <button onClick={drawingNext}
-                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
-                            </button>
-                        </div>
-                        <div className="blurb">
-                            <h4>drawings</h4>
-                            <p>Ever since I was young, I've kept sketch books that I would draw in from time to time. It's always been my favourite medium because of its simplicity. To the left are various I've done over the years.</p>
                         </div>
                     </div>
                 </div>

@@ -35,7 +35,7 @@
             .art-tile {
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 margin: auto;
                 padding: 2em;
@@ -49,18 +49,48 @@
                 .artwork {
                     display: flex;
                     justify-content: center;
-                    width: 50%;
+                    align-items: center;
+                    width: 75%;
                     height: 100%;
 
                     video, img {
-                        max-width: 90%;
-                        border-radius: 20px;
+                        max-width: 95%;
+                        max-height: 100%;
+                        border-radius: 10px;
+                    }
+
+                    .slideshow {
+                        width: 80%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        video, img {
+                            max-width: 95%;
+                            max-height: 100%;
+                            border-radius: 10px;
+                        }
                     }
                     button {
+                        width: 4em;
+                        height: 4em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         background-color: themed("secondary");
+
                         svg {
-                            height: 2em;
-                            width: 2em;
+                            width: auto;
+                            height: auto;
+                            padding: 0;
+                            margin: 0;
+                            stroke: themed("text");
+                            transition: all 0.2s;
+
+                            &:hover {
+                                stroke: themed("accent");
+                            }
                         }
                     }
                 }
@@ -70,7 +100,9 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 50%;
+                    width: 55%;
+                    margin-left: 3em;
+                    margin-right: 3em;
                     color: themed("text");
                 }
                 
