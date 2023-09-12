@@ -18,12 +18,12 @@ const Projects: React.FC<Props> = ({theme}) => {
                     <div className="project-list">
                         <div className="project">
                             <div className="title">
-                                <img src="../../project-images/snake.png" alt="snake" />
+                                <img src="../../projects/snake.png" alt="snake" />
                                 <h4 style={{textDecorationColor: "rgb(65, 86, 178)"}}>snake</h4>
                             </div>
                             <p>Quizlet organized a competition to design a new study game for their website. I partnered with two friends and engaged in two months of frequent development on the project. </p>
                             <div className="view-more">
-                                <a href=""
+                                <a href="../projects/demos/snakegame-demo.mp4" target="_blank"
                                     dangerouslySetInnerHTML={{__html: svgs.view}}>
                                 </a>
                                 <a href=""
@@ -36,7 +36,7 @@ const Projects: React.FC<Props> = ({theme}) => {
                         </div>
                         <div className="project">
                             <div className="title">
-                                <img src="../../project-images/uvmaps.png" alt="uvmaps" />
+                                <img src="../../projects/uvmaps.png" alt="uvmaps" />
                                 <h4 style={{textDecorationColor: "rgb(31, 81, 42)"}}>uvmaps</h4>
                             </div>
                             <p>In collaboration with four developers, we crafted an iOS app using SwiftUI. Our aim was to help University of Vermont students locate buildings and getting to classes on time. </p>
@@ -52,7 +52,7 @@ const Projects: React.FC<Props> = ({theme}) => {
                                 </a>
                             </div>
                         </div>
-                        <div className="project">
+                        {/* <div className="project">
                             <div className="title">
                                 <img src="../../project-images/twordle2.png" alt="placeholder" />
                                 <h4 style={{textDecorationColor: "#C08C8C"}}>twordle</h4>
@@ -69,26 +69,9 @@ const Projects: React.FC<Props> = ({theme}) => {
                                     dangerouslySetInnerHTML={{__html: svgs.link}}>
                                 </a>
                             </div>
-                        </div>
-                        <div className="project">
-                            <div className="title">
-                                <img src="../../project-images/placeholder.png" alt="placeholder" />
-                                <h4>coming soon!</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec condimentum magna. Sed ut mollis est. Aliquam dolor eros, molestie a ultricies rutrum, placerat eget quam. Nunc purus leo, dignissim et euismod.</p>
-                            <div className="view-more">
-                                <a href=""
-                                    dangerouslySetInnerHTML={{__html: svgs.view}}>
-                                </a>
-                                <a href="https://github.com/tateosborne/UVMap" target="_blank"
-                                    dangerouslySetInnerHTML={{__html: svgs.github}}>
-                                </a>
-                                <a href="https://uvmaps.dev" target="_blank"
-                                    dangerouslySetInnerHTML={{__html: svgs.link}}>
-                                </a>
-                            </div>
-                        </div>
+                        </div> */}
                     </div>
+                    <p className="footnote">more on the way...</p>
                 </div>
             </div>
         </div>

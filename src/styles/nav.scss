@@ -3,12 +3,14 @@
 @include themify($themes) {
 
     .nav-bar {
-        width: 100%;
+        width: 80%;
         height: 64px;
-        padding: 1em;
-        padding-left: 2em;
+        padding: 1%;
+        left: 9%;
+        top: 0.25em;
         position: fixed;
         z-index: 99;
+        border-radius: 30px;
 
         display: flex;
         justify-content: space-between;
@@ -18,7 +20,7 @@
         background-color: rgba(themed("primary"), 0.85);
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
-        box-shadow: 0px 10px 15px -10px rgba(themed("shadow"), 0.15);
+        box-shadow: 0px 0px 50px rgba(themed("shadow"), 0.25);
 
         transition: all 0.5s ease-in-out;
 
@@ -30,10 +32,8 @@
         }
 
         .nav-items {
-            padding-right: 3.5em;
-
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             
             a {
                 padding: 1em;
@@ -48,7 +48,7 @@
             }
 
             button {
-                background-color: themed("primary");
+                background-color: rgba(themed("primary"), 0.0);
                 transition: all 0.5s ease-in-out;
 
                 svg {

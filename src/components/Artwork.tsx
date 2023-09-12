@@ -204,7 +204,7 @@ const Artwork: React.FC<Props> = ({theme}) => {
                             <p>I designed, painted, and edited an animated film showcasing a fictional chef's daily life. I worked on the piece extensively over the course of two months and produced my favourite piece.</p>
                         </div>
                         <div className="artwork">
-                            <video poster="../allessiothumbnail.png" controls>
+                            <video poster="../artwork/animations/allessiothumbnail.png" controls>
                                 <source src="../artwork/animations/allessio.mp4" type="video/mp4" />
                             </video>
                         </div>
@@ -255,7 +255,7 @@ const Artwork: React.FC<Props> = ({theme}) => {
                     <div className="art-tile">
                         <div className="blurb">
                             <h4 style={{textDecorationColor: "#1E5A68"}}>photography</h4>
-                            <p>Photography is an art that I've indulged in sporadically over the years. I've always enjoyed the act of capturing moments in a certain light. Having recently got a camera as well, I feel inspired to explore this medium more.</p>
+                            <p>Photography is a medium that I've indulged in sporadically over the years. I've always enjoyed the act of capturing moments in a certain light. Having recently got a camera as well, I feel inspired to explore photography more.</p>
                         </div>
                         <div className="artwork">
                             <button onClick={photographyPrev}
@@ -292,7 +292,7 @@ const Artwork: React.FC<Props> = ({theme}) => {
                             <p>After making some digital art in graphic design and hand-drawn animations, I wanted to combine the two. I learned the ropes of the powerful software <i>Blender</i>, and created this doughnut clip.</p>
                         </div>
                         <div className="artwork">
-                            <video poster="../doughnutthumbnail.png" controls>
+                            <video poster="../artwork/animations/doughnutthumbnail.png" controls>
                                 <source src="../artwork/animations/doughnut.mp4" type="video/mp4" />
                             </video>
                         </div>

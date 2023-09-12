@@ -112,6 +112,16 @@
                     }
                 }
             }
+            .footnote {
+                width: fit-content;
+                margin: auto;
+                margin-top: 3em;
+                padding: 0.5em;
+                color: $mono-6;
+                font-size: small;
+                background-color: themed("primary");
+                border-radius: 12px;
+            }
         }
     }
 }
