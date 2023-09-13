@@ -36,7 +36,7 @@
             .project-list {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 2em;
+                gap: 1em;
                 margin-top: 2em;
 
                 .project {
@@ -121,6 +121,27 @@
                 font-size: small;
                 background-color: themed("primary");
                 border-radius: 12px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .projects-container {
+
+            .content-container {
+                width: 80%;
+
+                .header-container {
+                    align-items: center;
+                    margin: auto;
+                }
+
+                .project-list {
+                    
+                    .project {
+                        width: 80%;
+                    }
+                }
             }
         }
     }

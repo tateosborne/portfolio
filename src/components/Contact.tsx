@@ -10,7 +10,7 @@ const Contact: React.FC<Props> = ({theme}) => {
     return (
         <div className={theme}>
             <div className="contact-container" id="contact">
-                <div className="sub-container">
+                <div className="content-container">
                     <div className="header-container">
                         <h2>REACH OUT 📬</h2>
                         <h3>check out my contacts below!</h3>
