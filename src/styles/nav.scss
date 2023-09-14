@@ -1,73 +1,155 @@
 @import "vars.scss";
 
 @include themify($themes) {
+    .desktop {
+        .nav-bar {
+            width: 80%;
+            height: 64px;
+            padding: 1%;
+            left: 9%;
+            top: 0.25em;
+            position: fixed;
+            z-index: 99;
+            border-radius: 30px;
 
-    .nav-bar {
-        width: 80%;
-        height: 64px;
-        padding: 1%;
-        left: 9%;
-        top: 0.25em;
-        position: fixed;
-        z-index: 99;
-        border-radius: 30px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 18px;
-        font-weight: 700;
-        background-color: rgba(themed("primary"), 0.85);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(15px);
-        box-shadow: 0px 0px 50px rgba(themed("shadow"), 0.25);
-
-        transition: all 0.5s ease-in-out;
-
-        p {
-            color: themed("primary");
-            background-color: themed("accent");
-            padding: 0.25em;
-            border-radius: 10px;
-        }
-
-        .nav-items {
             display: flex;
             justify-content: space-between;
-            
-            a {
-                margin: 1em;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: rgba(themed("primary"), 0.8);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            box-shadow: 0px 0px 50px rgba(themed("shadow"), 0.25);
 
-                color: themed("text");
-                text-decoration: none;
-                transition: all 0.2s;
+            transition: all 0.5s ease-in-out;
 
-                &:hover {
-                    color: themed("accent");
-                }
+            p {
+                color: themed("primary");
+                background-color: themed("accent");
+                padding: 0.25em;
+                border-radius: 10px;
             }
 
-            button {
-                background-color: rgba(themed("primary"), 0.0);
-                transition: all 0.5s ease-in-out;
+            .nav-items {
+                display: flex;
+                justify-content: space-between;
+                
+                a {
+                    margin: 1em;
 
-                svg {
-                    width: 2em;
-                    height: auto;
-
-                    fill: themed("text");
+                    color: themed("text");
+                    text-decoration: none;
+                    transition: all 0.2s;
 
                     &:hover {
-                        fill: themed("accent");
+                        color: themed("accent");
+                    }
+                }
+
+                button {
+                    background-color: rgba(themed("primary"), 0.0);
+                    transition: all 0.5s ease-in-out;
+
+                    svg {
+                        width: 2em;
+                        height: auto;
+
+                        fill: themed("text");
+
+                        &:hover {
+                            fill: themed("accent");
+                        }
                     }
                 }
             }
         }
     }
 
-    // @media only screen and (max-width: 600px) {
-    //     .nav-bar {
-    //         width: 1em;
-    //     }
-    // }
+    .mobile {
+        position: fixed;
+        top: 15px;
+        bottom: 15px;
+        z-index: 98;
+
+        .nav-bar {
+            .nav-shown {
+                width: fit-content;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5em;
+                padding: 1em;
+
+                border-radius: 0 20px 0 0;
+                background-color: rgba(themed("primary"), 0.8);
+                -webkit-backdrop-filter: blur(12px);
+                backdrop-filter: blur(12px);
+                box-shadow: 10px 0px 30px rgba(themed("shadow"), 0.5);
+                transition: all 0.2s;
+
+                button:first-child {
+                    margin-left: 0;
+                    background-color: rgba(themed("primary"), 0.0);
+                    
+                    svg {
+                        width: 2.25em;
+                        height: auto;
+                        stroke: themed("text");
+                        stroke-width: 3;
+                    }
+                }
+
+                p {
+                    color: themed("primary");
+                    background-color: themed("accent");
+                    padding: 0.25em;
+                    border-radius: 10px;
+                    font-weight: 700;
+                }
+
+                a {
+                    margin-left: 1em;
+                    color: themed("text");
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 500;
+                    padding: 0.25em 0 0.25em 0;
+                }
+
+                button {
+                    margin-left: 1em;
+                    background-color: rgba(themed("primary"), 0.0);
+                    svg {
+                        width: 2.25em;
+                        height: auto;
+                        stroke: themed("text");
+                        fill: themed("text");
+                    }
+                }
+            }
+
+            .nav-hidden {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(themed("secondary"), 0.0);
+                border-radius: 50%;
+
+                button {
+                    margin-top: 1em;
+                    margin-left: 1em;
+                    background-color: rgba(themed("primary"), 0.0);
+                    
+                    svg {
+                        width: 2.25em;
+                        height: auto;
+                        stroke: themed("text");
+                        stroke-width: 3;
+                    }
+                }
+            }
+        }
+    }
 }

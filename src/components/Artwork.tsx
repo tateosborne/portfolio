@@ -4,6 +4,8 @@ import svgs from '../svgs'
 
 type Props = {
     theme: string;
+    sideBar: boolean;
+    setSideBar: (arg0: boolean) => void;
 }
 
 const pottery = [
@@ -119,12 +121,12 @@ const graphicDesign = [
 ];
 
 
-const Artwork: React.FC<Props> = ({theme}) => {
-
+const Artwork: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
     const [potteryIdx, setPotteryIdx] = useState(0);
     const [drawingIdx, setDrawingIdx] = useState(0);
     const [photographyIdx, setPhotographyIdx] = useState(0);
     const [graphicDesignIdx, setGraphicDesignIdx] = useState(0);
+    var blur = "no-blur";
 
     const potteryPrev = () => {
         if (potteryIdx > 0) {
@@ -190,111 +192,117 @@ const Artwork: React.FC<Props> = ({theme}) => {
         }
     }
 
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && sideBar) {
+        blur = "blur";
+     }
+
     return (
         <div className={theme}>
-            <div className="artwork-container" id="artwork">
-                <div className="header-container">
-                    <h2>ARTWORK 🎨</h2>
-                    <h3>check out some of my artwork!</h3>
-                </div>
-                <div className="content-container">
-                    <div className="art-tile">
-                        <div className="blurb">
-                            <h4 style={{textDecorationColor: "#962D23"}}>animation</h4>
-                            <p>I designed, painted, and edited an animated film showcasing a fictional chef's daily life. I worked on the piece extensively over the course of two months and produced my favourite piece.</p>
-                        </div>
-                        <div className="artwork">
-                            <video poster="../artwork/animations/allessiothumbnail.png" controls>
-                                <source src="../artwork/animations/allessio.mp4" type="video/mp4" />
-                            </video>
-                        </div>
+            <div className={blur}>
+                <div className="artwork-container" id="artwork" onClick={() => setSideBar(false)}>
+                    <div className="header-container">
+                        <h2>ARTWORK 🎨</h2>
+                        <h3>check out some of my artwork!</h3>
                     </div>
-                    <div className="art-tile">
-                        <div className="artwork">
-                            <button onClick={potteryPrev}
-                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
-                            </button>
-                            <div className="slideshow">
-                                <img src={pottery[potteryIdx].path} alt={pottery[potteryIdx].alt} />
+                    <div className="content-container">
+                        <div className="art-tile">
+                            <div className="blurb">
+                                <h4 style={{textDecorationColor: "#962D23"}}>animation</h4>
+                                <p>I designed, painted, and edited an animated film showcasing a fictional chef's daily life. I worked on the piece extensively over the course of two months and produced my favourite piece.</p>
                             </div>
-                            <button onClick={potteryNext}
-                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
-                            </button>
-                        </div>
-                        <div className="blurb">
-                            <h4 style={{textDecorationColor: "#B0A68A"}}>pottery</h4>
-                            <p>I honed wheel throwing for five months, crafting functional pottery. The art of turning what was once mud into delicate, lightweight pieces resonated with me, furthering my appreciation for this craft.</p>
-                        </div>
-                    </div>
-                    <div className="art-tile">
-                        <div className="blurb">
-                            <h4 style={{textDecorationColor: "#5B6384"}}>oil painting</h4>
-                            <p>For a final project, I tried oil painting for the first time. It resulted in this 3ft by 3ft canvas, <i>Pebbles & Piers</i>, which is a portrayal of Brighton beach in my English hometown.</p>
-                        </div>
-                        <div className="artwork">
-                            <img src="../artwork/paintings/oil-painting.jpg" alt="pebbles & piers oil painting" />
-                        </div>
-                    </div>
-                    <div className="art-tile">
-                        <div className="artwork">
-                            <button onClick={drawingPrev}
-                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
-                            </button>
-                            <div className="slideshow">
-                                <img src={drawings[drawingIdx].path} alt={drawings[drawingIdx].alt} />
+                            <div className="artwork">
+                                <video poster="../artwork/animations/allessiothumbnail.png" controls>
+                                    <source src="../artwork/animations/allessio.mp4" type="video/mp4" />
+                                </video>
                             </div>
-                            <button onClick={drawingNext}
-                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
-                            </button>
                         </div>
-                        <div className="blurb">
-                            <h4>drawings</h4>
-                            <p>Ever since I was young, I've kept sketch books that I would draw in from time to time. It's always been my favourite medium because of its simplicity. To the left are various I've done over the years.</p>
-                        </div>
-                    </div>
-                    <div className="art-tile">
-                        <div className="blurb">
-                            <h4 style={{textDecorationColor: "#1E5A68"}}>photography</h4>
-                            <p>Photography is a medium that I've indulged in sporadically over the years. I've always enjoyed the act of capturing moments in a certain light. Having recently got a camera as well, I feel inspired to explore photography more.</p>
-                        </div>
-                        <div className="artwork">
-                            <button onClick={photographyPrev}
-                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
-                            </button>
-                            <div className="slideshow">
-                                <img src={photography[photographyIdx].path} alt={photography[photographyIdx].alt} />
+                        <div className="art-tile">
+                            <div className="artwork">
+                                <button onClick={potteryPrev}
+                                    dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                                </button>
+                                <div className="slideshow">
+                                    <img src={pottery[potteryIdx].path} alt={pottery[potteryIdx].alt} />
+                                </div>
+                                <button onClick={potteryNext}
+                                    dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                                </button>
                             </div>
-                            <button onClick={photographyNext}
-                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
-                            </button>
-                        </div>
-                    </div>
-                    <div className="art-tile">
-                        <div className="artwork">
-                            <button onClick={graphicDesignPrev}
-                                dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
-                            </button>
-                            <div className="slideshow">
-                                <img src={graphicDesign[graphicDesignIdx].path} alt={graphicDesign[graphicDesignIdx].alt} />
+                            <div className="blurb">
+                                <h4 style={{textDecorationColor: "#B0A68A"}}>pottery</h4>
+                                <p>I honed wheel throwing for five months, crafting functional pottery. The art of turning what was once mud into delicate, lightweight pieces resonated with me, furthering my appreciation for this craft.</p>
                             </div>
-                            <button onClick={graphicDesignNext}
-                                dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
-                            </button>
                         </div>
-                        <div className="blurb">
-                            <h4 style={{textDecorationColor: "#C5AE72"}}>graphic design</h4>
-                            <p>Over the course of a few months, I learned and became adversed in Adobe Photoshop and Illustrator, creating various graphic design images.</p>
+                        <div className="art-tile">
+                            <div className="blurb">
+                                <h4 style={{textDecorationColor: "#5B6384"}}>oil painting</h4>
+                                <p>For a final project, I tried oil painting for the first time. It resulted in this 3ft by 3ft canvas, <i>Pebbles & Piers</i>, which is a portrayal of Brighton beach in my English hometown.</p>
+                            </div>
+                            <div className="artwork">
+                                <img src="../artwork/paintings/oil-painting.jpg" alt="pebbles & piers oil painting" />
+                            </div>
                         </div>
-                    </div>
-                    <div className="art-tile">
-                        <div className="blurb">
-                            <h4 style={{textDecorationColor: "#65432D"}}>3-d animation</h4>
-                            <p>After making some digital art in graphic design and hand-drawn animations, I wanted to combine the two. I learned the ropes of the powerful software <i>Blender</i>, and created this doughnut clip.</p>
+                        <div className="art-tile">
+                            <div className="artwork">
+                                <button onClick={drawingPrev}
+                                    dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                                </button>
+                                <div className="slideshow">
+                                    <img src={drawings[drawingIdx].path} alt={drawings[drawingIdx].alt} />
+                                </div>
+                                <button onClick={drawingNext}
+                                    dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                                </button>
+                            </div>
+                            <div className="blurb">
+                                <h4>drawings</h4>
+                                <p>Ever since I was young, I've kept sketch books that I would draw in from time to time. It's always been my favourite medium because of its simplicity. To the left are various I've done over the years.</p>
+                            </div>
                         </div>
-                        <div className="artwork">
-                            <video poster="../artwork/animations/doughnutthumbnail.png" controls>
-                                <source src="../artwork/animations/doughnut.mp4" type="video/mp4" />
-                            </video>
+                        <div className="art-tile">
+                            <div className="blurb">
+                                <h4 style={{textDecorationColor: "#1E5A68"}}>photography</h4>
+                                <p>Photography is a medium that I've indulged in sporadically over the years. I've always enjoyed the act of capturing moments in a certain light. Having recently got a camera as well, I feel inspired to explore photography more.</p>
+                            </div>
+                            <div className="artwork">
+                                <button onClick={photographyPrev}
+                                    dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                                </button>
+                                <div className="slideshow">
+                                    <img src={photography[photographyIdx].path} alt={photography[photographyIdx].alt} />
+                                </div>
+                                <button onClick={photographyNext}
+                                    dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="art-tile">
+                            <div className="artwork">
+                                <button onClick={graphicDesignPrev}
+                                    dangerouslySetInnerHTML={{__html: svgs.leftarrow}}>
+                                </button>
+                                <div className="slideshow">
+                                    <img src={graphicDesign[graphicDesignIdx].path} alt={graphicDesign[graphicDesignIdx].alt} />
+                                </div>
+                                <button onClick={graphicDesignNext}
+                                    dangerouslySetInnerHTML={{__html: svgs.rightarrow}}>
+                                </button>
+                            </div>
+                            <div className="blurb">
+                                <h4 style={{textDecorationColor: "#C5AE72"}}>graphic design</h4>
+                                <p>Over the course of a few months, I learned and became adversed in Adobe Photoshop and Illustrator, creating various graphic design images.</p>
+                            </div>
+                        </div>
+                        <div className="art-tile">
+                            <div className="blurb">
+                                <h4 style={{textDecorationColor: "#65432D"}}>3-d animation</h4>
+                                <p>After making some digital art in graphic design and hand-drawn animations, I wanted to combine the two. I learned the ropes of the powerful software <i>Blender</i>, and created this doughnut clip.</p>
+                            </div>
+                            <div className="artwork">
+                                <video poster="../artwork/animations/doughnutthumbnail.png" controls>
+                                    <source src="../artwork/animations/doughnut.mp4" type="video/mp4" />
+                                </video>
+                            </div>
                         </div>
                     </div>
                 </div>

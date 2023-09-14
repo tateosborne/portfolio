@@ -115,33 +115,71 @@
     }
 
     @media only screen and (max-width: 600px) {
-        .artwork-container {
-            width: 80%;
+        .blur {
 
-            .header-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: auto;
-                padding-left: 0;
-            }
+            .artwork-container {
+                width: 80%;
 
-            .content-container {
-                flex-direction: column;
-                
-                .art-tile {
-                    height: fit-content;
+                .header-container {
+                    display: flex;
                     flex-direction: column;
-                    padding: 1em;
+                    align-items: center;
+                    margin: auto;
+                    padding-left: 0;
+                }
 
-                    .artwork {
-                        width: 70%;
+                .content-container {
+                    flex-direction: column;
+                    
+                    .art-tile {
+                        height: fit-content;
+                        flex-direction: column;
+                        padding: 1em;
+
+                        .artwork {
+                            width: 70%;
+                        }
+
+                        .blurb {
+                            width: 80%;
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
                     }
+                }
+            }
+        }
 
-                    .blurb {
-                        width: 80%;
-                        margin-left: 0;
-                        margin-right: 0;
+        .no-blur {
+
+            .artwork-container {
+                width: 80%;
+
+                .header-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: auto;
+                    padding-left: 0;
+                }
+
+                .content-container {
+                    flex-direction: column;
+                    
+                    .art-tile {
+                        height: fit-content;
+                        flex-direction: column;
+                        padding: 1em;
+
+                        .artwork {
+                            width: 70%;
+                        }
+
+                        .blurb {
+                            width: 80%;
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
                     }
                 }
             }

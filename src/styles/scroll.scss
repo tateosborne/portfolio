@@ -38,13 +38,27 @@
     }
 
     @media only screen and (max-width: 600px) {
-        .container {
-            width: 2em;
-            height: 2em;
+        .blur {
+            .container {
+                width: 2em;
+                height: 2em;
 
-            svg {
-                width: 1.5em;
-                height: 1.5em;
+                svg {
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+            }
+        }
+
+        .no-blur {
+            .container {
+                width: 2em;
+                height: 2em;
+
+                svg {
+                    width: 1.5em;
+                    height: 1.5em;
+                }
             }
         }
     }

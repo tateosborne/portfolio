@@ -4,10 +4,12 @@ import svgs from "../svgs";
 
 type Props = {
     theme: string;
+    sideBar: boolean;
 }
 
-const Scroll: React.FC<Props> = ({theme}) => {
+const Scroll: React.FC<Props> = ({theme, sideBar}) => {
     const [isVisible, setIsVisible] = useState(false);
+    var blur = "no-blur";
 
     useEffect(() => {
         
@@ -24,11 +26,17 @@ const Scroll: React.FC<Props> = ({theme}) => {
         
     }, []);
 
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && sideBar) {
+        blur = "blur";
+     }
+
     return (
         <div className={theme}>
-            <a className={`container ${isVisible ? "visible" : ""}`} href="#"
-                dangerouslySetInnerHTML={{__html: svgs.uparrow}}>
-            </a>
+            <div className={blur}>
+                <a className={`container ${isVisible ? "visible" : ""}`} href="#"
+                    dangerouslySetInnerHTML={{__html: svgs.uparrow}}>
+                </a>
+            </div>
         </div>
     )
 }

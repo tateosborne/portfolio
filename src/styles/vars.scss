@@ -15,30 +15,6 @@ $mono-11: #191919;
 $mono-12: #141414;
 $black: #000000;
 
-$red-4: #FF8787;
-$red-5: #FF6B6B;
-$red-6: #FA5252;
-$red-7: #F03E3E;
-$red-8: #E03131;
-
-$pink-4: #F783AC;
-$pink-5: #F06595;
-$pink-6: #E64980;
-$pink-7: #D6336C;
-$pink-8: #C2255C;
-
-$grape-4: #DA77F2;
-$grape-5: #CC5DE8;
-$grape-6: #BE4BDB;
-$grape-7: #AE3EC9;
-$grape-8: #9C36B5;
-
-$violet-4: #9775FA;
-$violet-5: #845EF7;
-$violet-6: #7950F2;
-$violet-7: #7048E8;
-$violet-8: #6741D9;
-
 $blue-4: #4DABF7;
 $blue-5: #339AF0;
 $blue-6: #228BE6;
@@ -51,30 +27,18 @@ $green-6: #40C057;
 $green-7: #37B24D;
 $green-8: #2F9E44;
 
-$lime-4: #A9E34B;
-$lime-5: #94D82D;
-$lime-6: #82C91E;
-$lime-7: #74B816;
-$lime-8: #66A80F;
-
 $yellow-4: #FFD43B;
 $yellow-5: #FCC419;
 $yellow-6: #FAB005;
 $yellow-7: #F59F00;
 $yellow-8: #F08C00;
 
-$orange-4: #FFA94D;
-$orange-5: #FF922B;
-$orange-6: #FD7E14;
-$orange-7: #F76707;
-$orange-8: #E8590C;
-
 // light/dark mode declarations
 $themes: (
     light: (
         primary: $white,
         secondary: $mono-0,
-        accent: $orange-8,
+        accent: $blue-8,
         text: $mono-12,
         h3-bg-colour: $mono-8,
         shadow: $mono-6
@@ -82,7 +46,7 @@ $themes: (
     dark: (
         primary: $mono-12,
         secondary: $mono-11,
-        accent: $orange-4,
+        accent: $blue-4,
         text: $white,
         h3-bg-colour: $mono-4,
         shadow: $black

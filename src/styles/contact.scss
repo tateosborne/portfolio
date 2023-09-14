@@ -62,11 +62,14 @@
                             width: 2em;
                             height: auto;
                             stroke: themed("text");
+                            
+                            #education {
+                                    fill: themed("text");
+                            }
                         }
                     }
 
                     a {
-                        font-size: 20px;
                         color: themed("text");
                         text-decoration: none;
 
@@ -94,25 +97,70 @@
     }
     
     @media only screen and (max-width: 600px) {
-        .contact-container {
-            .content-container {
-                width: 80%;
+        .blur {
+            .contact-container {
+                .content-container {
+                    width: 80%;
 
-                .header-container {
-                    align-items: center;
-                    margin: auto;
-                }
+                    .header-container {
+                        align-items: center;
+                        margin: auto;
+                    }
 
-                .contacts {
-                    width: 100%;
-                    margin: auto;
-                    margin-top: 2em;
-                    margin-bottom: 2em;
+                    .contacts {
+                        width: 100%;
+                        margin: auto;
+                        margin-top: 2em;
+                        margin-bottom: 2em;
+
+                        .each-contact {
+                            span {
+                                svg {
+                                    width: 1.5em;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        margin: auto;
+                    }
                 }
-                img {
-                    width: 150px;
-                    height: 150px;
-                    margin: auto;
+            }
+        }
+
+        .no-blur {
+            .contact-container {
+                .content-container {
+                    width: 80%;
+
+                    .header-container {
+                        align-items: center;
+                        margin: auto;
+                    }
+
+                    .contacts {
+                        width: 100%;
+                        margin: auto;
+                        margin-top: 2em;
+                        margin-bottom: 2em;
+
+                        .each-contact {
+                            span {
+                                svg {
+                                    width: 1.5em;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        margin: auto;
+                    }
                 }
             }
         }

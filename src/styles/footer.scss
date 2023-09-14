@@ -53,10 +53,31 @@
     }
 
     @media only screen and (max-width: 600px) {
-        .footer-container {
+        .blur {
+            .footer-container {
+                .links-container {
+                    gap: 1em;
 
-            .links-container {
-                gap: 1em;
+                    span {
+                        svg {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .no-blur {
+            .footer-container {
+                .links-container {
+                    gap: 1em;
+
+                    span {
+                        svg {
+                            width: 20px;
+                        }
+                    }
+                }
             }
         }
     }
