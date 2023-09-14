@@ -288,7 +288,7 @@ const Artwork: React.FC<Props> = ({theme}) => {
                     </div>
                     <div className="art-tile">
                         <div className="blurb">
-                            <h4 style={{textDecorationColor: "#65432D"}}>3-dimensional animation</h4>
+                            <h4 style={{textDecorationColor: "#65432D"}}>3-d animation</h4>
                             <p>After making some digital art in graphic design and hand-drawn animations, I wanted to combine the two. I learned the ropes of the powerful software <i>Blender</i>, and created this doughnut clip.</p>
                         </div>
                         <div className="artwork">

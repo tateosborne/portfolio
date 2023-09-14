@@ -23,14 +23,11 @@ const Projects: React.FC<Props> = ({theme}) => {
                             </div>
                             <p>Quizlet organized a competition to design a new study game for their website. I partnered with two friends and engaged in two months of frequent development on the project. </p>
                             <div className="view-more">
-                                <a href="../projects/demos/snakegame-demo.mp4" target="_blank"
-                                    dangerouslySetInnerHTML={{__html: svgs.view}}>
-                                </a>
                                 <a href=""
                                     dangerouslySetInnerHTML={{__html: svgs.github}}>
                                 </a>
-                                <a href="" target="_blank"
-                                    dangerouslySetInnerHTML={{__html: svgs.link}}>
+                                <a href="../projects/demos/snakegame-demo.mp4" target="_blank"
+                                    dangerouslySetInnerHTML={{__html: svgs.view}}>
                                 </a>
                             </div>
                         </div>
@@ -41,9 +38,6 @@ const Projects: React.FC<Props> = ({theme}) => {
                             </div>
                             <p>In collaboration with four developers, we crafted an iOS app using SwiftUI. Our aim was to help University of Vermont students locate buildings and getting to classes on time. </p>
                             <div className="view-more">
-                                <a href=""
-                                    dangerouslySetInnerHTML={{__html: svgs.view}}>
-                                </a>
                                 <a href="https://github.com/tateosborne/UVMap" target="_blank"
                                     dangerouslySetInnerHTML={{__html: svgs.github}}>
                                 </a>

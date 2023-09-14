@@ -28,6 +28,16 @@ const Contact: React.FC<Props> = ({theme}) => {
                                 dangerouslySetInnerHTML={{__html: svgs.download}} />
                             <a href="src/assets/pdfs/resume.pdf" target="_blank">résumé (.pdf)</a>
                         </div>
+                        <div className="each-contact">
+                            <span
+                                dangerouslySetInnerHTML={{__html: svgs.university}} />
+                            <a href="https://www.uvm.edu" target="_blank">University of Vermont (2023)</a>
+                        </div>
+                        <div className="each-contact">
+                            <span
+                                dangerouslySetInnerHTML={{__html: svgs.location}} />
+                            <a href="http://maps.google.com/?q=Exeter,+NH" target="_blank">Exeter, NH</a>
+                        </div>
                     </div>
                     <img src="../emojis/memoji-call.png" alt="memoji phone call" />
                 </div>
