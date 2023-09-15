@@ -211,9 +211,12 @@ const Artwork: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                                 <p>I designed, painted, and edited an animated film showcasing a fictional chef's daily life. I worked on the piece extensively over the course of two months and produced my favourite piece.</p>
                             </div>
                             <div className="artwork">
-                                <video poster="../artwork/animations/allessiothumbnail.png" controls>
-                                    <source src="../artwork/animations/allessio.mp4" type="video/mp4" />
-                                </video>
+                                <iframe 
+                                    src="https://www.youtube.com/embed/OmYNk7apjxM?si=TQlvfS2yjOJMDVEl"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
                             </div>
                         </div>
                         <div className="art-tile">
@@ -299,9 +302,12 @@ const Artwork: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                                 <p>After making some digital art in graphic design and hand-drawn animations, I wanted to combine the two. I learned the ropes of the powerful software <i>Blender</i>, and created this doughnut clip.</p>
                             </div>
                             <div className="artwork">
-                                <video poster="../artwork/animations/doughnutthumbnail.png" controls>
-                                    <source src="../artwork/animations/doughnut.mp4" type="video/mp4" />
-                                </video>
+                                <iframe
+                                    src="https://youtube.com/embed/KqaZD3YA32Q?si=ho9qm2-7hxqeOznu"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
                             </div>
                         </div>
                     </div>

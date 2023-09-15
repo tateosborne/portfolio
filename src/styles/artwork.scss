@@ -53,7 +53,7 @@
                     width: 75%;
                     height: 100%;
 
-                    video, img {
+                    img, iframe {
                         max-width: 95%;
                         max-height: 100%;
                         border-radius: 10px;
@@ -66,7 +66,7 @@
                         justify-content: center;
                         align-items: center;
 
-                        video, img {
+                        img {
                             max-width: 95%;
                             max-height: 100%;
                             border-radius: 10px;
@@ -116,7 +116,6 @@
 
     @media only screen and (max-width: 600px) {
         .blur {
-
             .artwork-container {
                 width: 80%;
 
@@ -137,7 +136,7 @@
                         padding: 1em;
 
                         .artwork {
-                            width: 70%;
+                            width: 95%;
                         }
 
                         .blurb {
@@ -151,7 +150,6 @@
         }
 
         .no-blur {
-
             .artwork-container {
                 width: 80%;
 
@@ -172,7 +170,7 @@
                         padding: 1em;
 
                         .artwork {
-                            width: 70%;
+                            width: 95%;
                         }
 
                         .blurb {

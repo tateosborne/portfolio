@@ -31,10 +31,10 @@ const Projects: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                                 </div>
                                 <p>Quizlet organized a competition to design a new study game for their website. I partnered with two friends and engaged in two months of frequent development on the project. </p>
                                 <div className="view-more">
-                                    <a href=""
+                                    <a href="https://github.com/tateosborne/snakegame"
                                         dangerouslySetInnerHTML={{__html: svgs.github}}>
                                     </a>
-                                    <a href="../projects/demos/snakegame-demo.mp4" target="_blank"
+                                    <a href="https://youtu.be/x8TFjv8Fw5g" target="_blank"
                                         dangerouslySetInnerHTML={{__html: svgs.view}}>
                                     </a>
                                 </div>
