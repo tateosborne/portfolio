@@ -242,7 +242,7 @@ const Artwork: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                                 <p>For a final project, I tried oil painting for the first time. It resulted in this 3ft by 3ft canvas, <i>Pebbles & Piers</i>, which is a portrayal of Brighton beach in my English hometown.</p>
                             </div>
                             <div className="artwork">
-                                <img src="artwork/paintings/oil-painting.jpg" alt="pebbles & piers oil painting" />
+                                <img src="../artwork/paintings/oil-painting.jpg" alt="pebbles & piers oil painting" />
                             </div>
                         </div>
                         <div className="art-tile">
