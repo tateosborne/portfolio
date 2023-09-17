@@ -87,7 +87,7 @@
                 background-color: rgba(themed("primary"), 0.8);
                 -webkit-backdrop-filter: blur(12px);
                 backdrop-filter: blur(12px);
-                box-shadow: 0px 0px 1em themed("accent");
+                box-shadow: 0px 0px 1em themed("shadow");
                 transition: all 0.2s;
 
                 button:first-child {
