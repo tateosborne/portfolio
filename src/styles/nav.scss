@@ -29,6 +29,7 @@
                 background-color: themed("accent");
                 padding: 0.25em;
                 border-radius: 10px;
+                box-shadow: 0px 0px 1em themed("accent");
             }
 
             .nav-items {
@@ -86,7 +87,7 @@
                 background-color: rgba(themed("primary"), 0.8);
                 -webkit-backdrop-filter: blur(12px);
                 backdrop-filter: blur(12px);
-                box-shadow: 10px 0px 30px rgba(themed("shadow"), 0.5);
+                box-shadow: 0px 0px 1em themed("accent");
                 transition: all 0.2s;
 
                 button:first-child {
@@ -107,6 +108,7 @@
                     padding: 0.25em;
                     border-radius: 10px;
                     font-weight: 700;
+                    box-shadow: 0px 0px 20px themed("accent");
                 }
 
                 a {
@@ -119,7 +121,7 @@
                 }
 
                 button {
-                    margin-left: 1em;
+                    margin-left: 1.25em;
                     background-color: rgba(themed("primary"), 0.0);
                     svg {
                         width: 2.25em;
