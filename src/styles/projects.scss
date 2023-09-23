@@ -10,7 +10,7 @@
         align-items: center;
         background-color: themed("secondary");
 
-        transition: all 0.5s ease-in-out;
+        transition: all 0.2s;
 
         .content-container {
             width: 55%;
@@ -25,13 +25,13 @@
 
                 h2 {
                     color: themed("accent");
-                    transition: all 0.5s ease-in-out;
+                    transition: all 0.2s;
                 }
 
                 h3 {
                     color: themed("primary");
                     background-color: themed("h3-bg-colour");
-                    transition: all 0.5s ease-in-out;
+                    transition: all 0.2s;
                 }
             }
 
@@ -56,14 +56,14 @@
 
                     border-radius: 20px;
 
-                    transition: all 0.5s ease-in-out;
+                    transition: all 0.2s;
 
                     p {
                         margin-left: 1.5em;
                         margin-right: 1.5em;
                         color: themed("text");
                         
-                        transition: all 0.5s ease-in-out;
+                        transition: all 0.2s;
                     }
 
                     .title {
@@ -88,7 +88,7 @@
 
                             color: themed("text");
 
-                            transition: all 0.5s ease-in-out;
+                            transition: all 0.2s;
 
                         }
                     }
@@ -98,7 +98,7 @@
                         bottom: 1em;
 
                         a {
-                            transition: all 0.5s ease-in-out;
+                            transition: all 0.2s;
                             
                             svg {
                                 width: 1.5em;
@@ -131,7 +131,7 @@
                 background-color: themed("primary");
                 border-radius: 12px;
 
-                transition: all 0.5s ease-in-out;
+                transition: all 0.2s;
             }
         }
     }

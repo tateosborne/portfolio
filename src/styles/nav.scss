@@ -22,7 +22,7 @@
             backdrop-filter: blur(12px);
             box-shadow: 0px 0px 50px rgba(themed("shadow"), 0.25);
 
-            transition: all 0.5s ease-in-out;
+            transition: all 0.2s;
 
             p {
                 color: themed("primary");
@@ -30,7 +30,7 @@
                 padding: 0.25em;
                 border-radius: 10px;
                 box-shadow: 0px 0px 1em themed("accent");
-                transition: all 0.5s ease-in-out;
+                transition: all 0.2s;
             }
 
             .nav-items {
@@ -42,7 +42,7 @@
 
                     color: themed("text");
                     text-decoration: none;
-                    transition: all 0.5s ease-in-out;
+                    transition: all 0.2s;
 
                     &:hover {
                         color: themed("accent");
@@ -51,7 +51,7 @@
 
                 button {
                     background-color: rgba(themed("primary"), 0.0);
-                    transition: all 0.5s ease-in-out;
+                    transition: all 0.2s;
 
                     svg {
                         width: 2em;

@@ -2,7 +2,7 @@
 
 @include themify($themes) {
     background-color: themed("primary");
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s;
     
     .artwork-container {
         width: 55%;
@@ -16,13 +16,13 @@
 
             h2 {
                 color: themed("accent");
-                transition: all 0.5s ease-in-out;
+                transition: all 0.2s;
             }
 
             h3 {
                 color: themed("primary");
                 background-color: themed("h3-bg-colour");
-                transition: all 0.5s ease-in-out;
+                transition: all 0.2s;
             }
         }
 
@@ -47,7 +47,7 @@
                 background: themed("secondary");
                 border-radius: 20px;
 
-                transition: all 0.5s ease-in-out;
+                transition: all 0.2s;
 
                 .artwork {
                     display: flex;
@@ -82,7 +82,7 @@
                         justify-content: center;
                         align-items: center;
                         background-color: themed("secondary");
-                        transition: all 0.5s ease-in-out;
+                        transition: all 0.2s;
 
                         svg {
                             width: auto;
@@ -109,7 +109,7 @@
                     margin-right: 3em;
                     color: themed("text");
 
-                    transition: all 0.5s ease-in-out;
+                    transition: all 0.2s;
                 }
                 
                 &:hover {
