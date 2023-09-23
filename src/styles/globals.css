@@ -2,10 +2,6 @@
     font-family: "Karla";
     src: url("../fonts/Karla-Regular.ttf") format("truetype");
 }
-@font-face {
-    font-family: "SFPro";
-    src: url("../fonts/SF-Pro.ttf") format("truetype");
-}
 
 
 html, body {
