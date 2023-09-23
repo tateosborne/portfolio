@@ -25,11 +25,13 @@
 
                 h2 {
                     color: themed("accent");
+                    transition: all 0.5s ease-in-out;
                 }
 
                 h3 {
                     color: themed("primary");
                     background-color: themed("h3-bg-colour");
+                    transition: all 0.5s ease-in-out;
                 }
             }
 
@@ -53,16 +55,15 @@
                     flex-direction: column;
 
                     border-radius: 20px;
-                    transition: all 0.2s ease-in-out;
 
-                    h4 {
-                        color: themed("text");
-                    }
+                    transition: all 0.5s ease-in-out;
 
                     p {
                         margin-left: 1.5em;
                         margin-right: 1.5em;
                         color: themed("text");
+                        
+                        transition: all 0.5s ease-in-out;
                     }
 
                     .title {
@@ -85,6 +86,10 @@
                             margin: auto;
                             margin-top: 1.5em;
 
+                            color: themed("text");
+
+                            transition: all 0.5s ease-in-out;
+
                         }
                     }
 
@@ -93,11 +98,15 @@
                         bottom: 1em;
 
                         a {
+                            transition: all 0.5s ease-in-out;
+                            
                             svg {
                                 width: 1.5em;
                                 height: auto;
-                                margin: 0.5em;
+                                margin: 1em;
                                 fill: themed("text");
+
+                                transition: all 0.2s;
 
                                 &:hover {
                                     fill: themed("accent");
@@ -121,6 +130,8 @@
                 font-size: small;
                 background-color: themed("primary");
                 border-radius: 12px;
+
+                transition: all 0.5s ease-in-out;
             }
         }
     }

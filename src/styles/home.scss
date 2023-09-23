@@ -24,6 +24,8 @@
 
                 h1, p {
                     color: themed("text");
+
+                    transition: all 0.5s ease-in-out;
                 }
 
                 h1 {
@@ -39,6 +41,8 @@
                     padding-top: 1em;
                     font-weight: 500;
                     text-align: center;
+
+                    transition: all 0.5s ease-in-out;
                 }
             }
 
@@ -50,6 +54,8 @@
                 
                 background-color: themed("primary");
                 box-shadow: 0px 0px 20px rgba(themed("shadow"), 0.15);
+
+                transition: all 0.5s ease-in-out;
             }
             
         }
@@ -68,8 +74,12 @@
             font-weight: 600;
             border-radius: 40px;
 
+            transition: all 0.5s ease-in-out;
+
             p {
                 color: themed("text");
+
+                transition: all 0.5s ease-in-out;
             }
 
             .icons {
@@ -87,6 +97,8 @@
             
                         border-radius: 50%;
                         fill: themed("primary");
+
+                        transition: all 0.5s ease-in-out;
                     }
                 }
             }
@@ -96,7 +108,7 @@
     @media only screen and (max-width: 600px) {
         .blur {
             filter: blur(15px);
-            transition: all 0.2s;
+            transition: all 0.5s ease-in-out;
 
             .home-container {
                 padding-top: 6em;
