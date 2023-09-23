@@ -34,7 +34,7 @@ const Contact: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                             <div className="each-contact">
                                 <span
                                     dangerouslySetInnerHTML={{__html: svgs.download}} />
-                                <a href="../assets/pdfs/tateosborne-resume.pdf" target="_blank">résumé (.pdf)</a>
+                                <a href="src/assets/pdfs/tateosborne-resume.pdf" target="_blank">résumé (.pdf)</a>
                             </div>
                             <div className="each-contact">
                                 <span
