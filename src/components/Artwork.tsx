@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/artwork.scss'
 import svgs from '../svgs'
 
@@ -126,7 +126,7 @@ const Artwork: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
     const [drawingIdx, setDrawingIdx] = useState(0);
     const [photographyIdx, setPhotographyIdx] = useState(0);
     const [graphicDesignIdx, setGraphicDesignIdx] = useState(0);
-    var blur = "no-blur";
+    let blur = "no-blur";
 
     const potteryPrev = () => {
         if (potteryIdx > 0) {

@@ -1,3 +1,4 @@
+import React from "react";
 import '../styles/nav.scss'
 import svgs from '../svgs'
 
@@ -10,7 +11,7 @@ type Props = {
 }
 
 const Nav: React.FC<Props> = ({theme, toggleTheme, sideBar, setSideBar, toggleSideBar}) => {
-    var device: string = "";
+    let device = "";
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         device = "mobile";

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../styles/scroll.scss";
 import svgs from "../svgs";
 
@@ -9,7 +9,7 @@ type Props = {
 
 const Scroll: React.FC<Props> = ({theme, sideBar}) => {
     const [isVisible, setIsVisible] = useState(false);
-    var blur = "no-blur";
+    let blur = "no-blur";
 
     useEffect(() => {
         

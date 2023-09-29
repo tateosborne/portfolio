@@ -1,3 +1,4 @@
+import React from "react";
 import '../styles/about.scss'
 import svgs from '../svgs'
 
@@ -8,7 +9,7 @@ type Props = {
 }
 
 const About: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
-    var blur = "no-blur";
+    let blur = "no-blur";
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && sideBar) {
        blur = "blur";

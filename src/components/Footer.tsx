@@ -1,3 +1,4 @@
+import React from "react";
 import '../styles/footer.scss'
 import svgs from '../svgs'
 
@@ -7,7 +8,7 @@ type Props = {
 }
 
 const Footer: React.FC<Props> = ({theme, sideBar}) => {
-    var blur = "no-blur";
+    let blur = "no-blur";
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && sideBar) {
        blur = "blur";
