@@ -155,70 +155,70 @@
             }
         }
     }
-}
-
-@keyframes glow {
-    0% {
-        box-shadow: 0px 0px 2em rgba(themed("accent"), 1.0);
-    }
-    5% {
-        box-shadow: 0px 0px 1.85em rgba(themed("accent"), 1.0);
-    }
-    10% {
-        box-shadow: 0px 0px 1.7em rgba(themed("accent"), 1.0);
-    }
-    15% {
-        box-shadow: 0px 0px 1.55em rgba(themed("accent"), 1.0);
-    }
-    20% {
-        box-shadow: 0px 0px 1.4em rgba(themed("accent"), 1.0);
-    }
-    25% {
-        box-shadow: 0px 0px 1.25em rgba(themed("accent"), 1.0);
-    }
-    30% {
-        box-shadow: 0px 0px 1.1em rgba(themed("accent"), 1.0);
-    }
-    35% {
-        box-shadow: 0px 0px 0.95em rgba(themed("accent"), 1.0);
-    }
-    40% {
-        box-shadow: 0px 0px 0.80em rgba(themed("accent"), 1.0);
-    }
-    45% {
-        box-shadow: 0px 0px 0.65em rgba(themed("accent"), 1.0);
-    }
-    50% {
-        box-shadow: 0px 0px 0.5em rgba(themed("accent"), 1.0);
-    }
-    55% {
-        box-shadow: 0px 0px 0.65em rgba(themed("accent"), 1.0);
-    }
-    60% {
-        box-shadow: 0px 0px 0.80em rgba(themed("accent"), 1.0);
-    }
-    65% {
-        box-shadow: 0px 0px 0.95em rgba(themed("accent"), 1.0);
-    }
-    70% {
-        box-shadow: 0px 0px 1.1em rgba(themed("accent"), 1.0);
-    }
-    75% {
-        box-shadow: 0px 0px 1.25em rgba(themed("accent"), 1.0);
-    }
-    80% {
-        box-shadow: 0px 0px 1.4em rgba(themed("accent"), 1.0);
-    }
-    85% {
-        box-shadow: 0px 0px 1.55em rgba(themed("accent"), 1.0);
-    }
-    90% {
-        box-shadow: 0px 0px 1.7em rgba(themed("accent"), 1.0);
-    }
-    95% {
-        box-shadow: 0px 0px 1.85em rgba(themed("accent"), 1.0);
-    }
-    100% {
-        box-shadow: 0px 0px 2.0em rgba(themed("accent"), 1.0);
+    
+    @keyframes glow {
+        0% {
+            box-shadow: 0px 0px 2em rgba(themed("accent"), 1.0);
+        }
+        5% {
+            box-shadow: 0px 0px 1.85em rgba(themed("accent"), 1.0);
+        }
+        10% {
+            box-shadow: 0px 0px 1.7em rgba(themed("accent"), 1.0);
+        }
+        15% {
+            box-shadow: 0px 0px 1.55em rgba(themed("accent"), 1.0);
+        }
+        20% {
+            box-shadow: 0px 0px 1.4em rgba(themed("accent"), 1.0);
+        }
+        25% {
+            box-shadow: 0px 0px 1.25em rgba(themed("accent"), 1.0);
+        }
+        30% {
+            box-shadow: 0px 0px 1.1em rgba(themed("accent"), 1.0);
+        }
+        35% {
+            box-shadow: 0px 0px 0.95em rgba(themed("accent"), 1.0);
+        }
+        40% {
+            box-shadow: 0px 0px 0.80em rgba(themed("accent"), 1.0);
+        }
+        45% {
+            box-shadow: 0px 0px 0.65em rgba(themed("accent"), 1.0);
+        }
+        50% {
+            box-shadow: 0px 0px 0.5em rgba(themed("accent"), 1.0);
+        }
+        55% {
+            box-shadow: 0px 0px 0.65em rgba(themed("accent"), 1.0);
+        }
+        60% {
+            box-shadow: 0px 0px 0.80em rgba(themed("accent"), 1.0);
+        }
+        65% {
+            box-shadow: 0px 0px 0.95em rgba(themed("accent"), 1.0);
+        }
+        70% {
+            box-shadow: 0px 0px 1.1em rgba(themed("accent"), 1.0);
+        }
+        75% {
+            box-shadow: 0px 0px 1.25em rgba(themed("accent"), 1.0);
+        }
+        80% {
+            box-shadow: 0px 0px 1.4em rgba(themed("accent"), 1.0);
+        }
+        85% {
+            box-shadow: 0px 0px 1.55em rgba(themed("accent"), 1.0);
+        }
+        90% {
+            box-shadow: 0px 0px 1.7em rgba(themed("accent"), 1.0);
+        }
+        95% {
+            box-shadow: 0px 0px 1.85em rgba(themed("accent"), 1.0);
+        }
+        100% {
+            box-shadow: 0px 0px 2.0em rgba(themed("accent"), 1.0);
+        }
     }
 }
