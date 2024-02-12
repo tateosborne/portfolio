@@ -28,8 +28,8 @@ const Contact: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                             <div className="each-contact">
                                 <span 
                                     dangerouslySetInnerHTML={{__html: svgs.email}} />
-                                <a href="mailto:tateposborne@icloud.com" target="_blank" rel="noreferrer noopener">
-                                    tateposborne@icloud.com
+                                <a href="mailto:tate14@proton.me" target="_blank" rel="noreferrer noopener">
+                                    tate14@proton.me
                                 </a>
                             </div>
                             <div className="each-contact">
