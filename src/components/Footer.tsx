@@ -30,7 +30,7 @@ const Footer: React.FC<Props> = ({theme, sideBar}) => {
                             <span 
                                 dangerouslySetInnerHTML={{__html: svgs.github}} />
                         </a>
-                        <a href="https://vsco.co/t-p-o/gallery" target="_blank">
+                        <a href="https://www.instagram.com/tatedoesphotography/" target="_blank">
                             <span 
                                 dangerouslySetInnerHTML={{__html: svgs.instagram}} />
                         </a>
