@@ -40,7 +40,12 @@ const Contact: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                             <div className="each-contact">
                                 <span
                                     dangerouslySetInnerHTML={{__html: svgs.university}} />
-                                <a href="https://www.uvm.edu" target="_blank">University of Vermont (2023)</a>
+                                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cc.gatech.edu/degree-programs/master-science-computer-science&ved=2ahUKEwiHxfvR0b2HAxU9EVkFHTcGBBsQFnoECAcQAQ&usg=AOvVaw2WBiJD2PLojs2LpFHvTkAy" target="_blank">(MS) Georgia Institute of Technology (current)</a>
+                            </div>
+                            <div className="each-contact">
+                                <span
+                                    dangerouslySetInnerHTML={{__html: svgs.university}} />
+                                <a href="https://www.uvm.edu" target="_blank">(BS) University of Vermont (2023)</a>
                             </div>
                             <div className="each-contact">
                                 <span
