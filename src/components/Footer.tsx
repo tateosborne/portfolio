@@ -32,7 +32,7 @@ const Footer: React.FC<Props> = ({theme, sideBar}) => {
                         </a>
                         <a href="https://vsco.co/t-p-o/gallery" target="_blank">
                             <span 
-                                dangerouslySetInnerHTML={{__html: svgs.vsco}} />
+                                dangerouslySetInnerHTML={{__html: svgs.instagram}} />
                         </a>
                         <a href="https://www.youtube.com/@tateosborne6849/featured" target="_blank">
                             <span
