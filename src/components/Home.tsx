@@ -22,7 +22,7 @@ const Home: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                     <div className="hero-container">
                         <div className="hero-text">
                             <h1>tate pa<span>rmar os</span>borne 👋🏽</h1>
-                            <p className="phrase">full-stack developer with artistic aptitudes</p>
+                            <p className="phrase">backend developer with artistic aptitudes</p>
                         </div>
                         <img className="hero-img" src="../hero.png" alt="hero image" />
                     </div>
