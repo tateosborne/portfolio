@@ -38,7 +38,7 @@ const About: React.FC<Props> = ({theme, sideBar, setSideBar}) => {
                         <img src="../../emojis/memoji-coding.png" alt="coding cartoon" />
                         <div className="body-text">
                             <p>Hey! I am an England-born {age} year-old developer. I graduated from the <span>University of Vermont</span> in 2023 with a Bachelors of Science in <span>Computer Science</span> and an <span>Art Studio</span> Minor.</p>
-                            <p>I am currently purusing my Master's of Science in <span>Computer Science</span> at <span>Georgia Tech</span>, expecting to graduate in the spring of 2026.</p>
+                            <p>I am currently pursuing my Master's of Science in <span>Computer Science</span> at <span>Georgia Tech</span>, expecting to graduate in the spring of 2026.</p>
                             <p>I have hobbies in soccer ⚽️, travelling ✈️, creating art 🎨, cooking 🧑🏽‍🍳, and speed-solving Rubik's cubes <span dangerouslySetInnerHTML={{__html: svgs.rubikscube}}></span></p>
                             <p>In my work, I obsess over <span>user experience</span> and <span>logical</span> structure.</p>
                         </div>
