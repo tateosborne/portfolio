@@ -7,11 +7,23 @@ import (
 	"net/http"
 )
 
-func hello(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprint(w, "hello\n")
+type welcome string
+
+func (wc welcome) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "Welcome to my server!")
 }
 
 func main() {
-	http.HandleFunc("/hello", hello)
-	http.ListenAndServe(":8080", nil)
+
+	// handler
+	var wc welcome
+
+	// server
+	server := http.Server{
+		Addr:    ":8080",
+		Handler: wc,
+	}
+
+	// run server
+	server.ListenAndServe()
 }
