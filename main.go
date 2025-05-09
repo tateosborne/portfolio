@@ -7,5 +7,11 @@ import (
 	"net/http"
 )
 
+func hello(w http.ResponseWriter, req *http.Request) {
+	fmt.Fprint(w, "hello\n")
+}
 
-
+func main() {
+	http.HandleFunc("/hello", hello)
+	http.ListenAndServe(":8080", nil)
+}
