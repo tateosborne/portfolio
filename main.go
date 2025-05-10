@@ -1,34 +1,28 @@
 package main
 
-// User →  Server listens →  Mux finds correct handler →  Handler sends HTML/CSS/images →  User
-
 import (
-	"fmt"
+	// "fmt"
+	"html/template"
+	// "log"
 	"net/http"
 )
 
-type welcome string
+// define template struct
+var tmpl *template.Template
 
-// handler interface
-func (wc welcome) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Welcome to my server!")
-}
-
-// handler function
-func gallery(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Photo gallery!")
+func homeHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl.ExecuteTemplate(w, "home.html", nil) // third param is for any data into template
 }
 
 func main() {
-	// router
+	// router, ie mux
 	router := http.NewServeMux()
 
-	// handler
-	var wc welcome
-	router.Handle("/", wc)
+	// html template
+	tmpl, _ = template.ParseGlob("./templates/*.html")
 
 	// handler funcs
-	router.HandleFunc("/gallery", gallery)
+	router.HandleFunc("/", homeHandler)
 
 	// server
 	server := http.Server{
