@@ -18,6 +18,8 @@ func main() {
 	// router, ie mux
 	router := http.NewServeMux()
 
+    router.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+
 	// html template
 	tmpl, _ = template.ParseGlob("./templates/*.html")
 
